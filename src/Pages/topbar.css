@@ -1,0 +1,80 @@
+/* Full-width container with no margin */
+.topbar-container {
+  width: 100%;
+  margin: 0;
+  background-color: #ffe468; /* Bootstrap Primary Color */
+}
+
+.topbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Allow items to wrap on small screens */
+}
+
+.topbar-left,
+.topbar-right {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Allow items to wrap on small screens */
+}
+
+/* Link styles for contact details */
+.topbar-link {
+  color: #070707;
+  text-decoration: none;
+  padding: 0 15px;
+  border-right: 1px solid #ffffff80;
+}
+
+.topbar-link:last-child {
+  border-right: none;
+}
+
+/* Icon link styles */
+.topbar-icon-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 15px;
+  border-right: 1px solid #ffffff80;
+}
+
+.topbar-icon-link:last-child {
+  border-right: none;
+}
+
+.icon {
+  margin-right: 5px;
+  color: #6c757d; /* Bootstrap Secondary Color */
+}
+
+/* Remove extra padding or margin */
+body {
+  margin: 0;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .topbar-inner {
+      flex-direction: column; /* Stack the items vertically */
+      align-items: flex-start;
+  }
+
+  .topbar-left,
+  .topbar-right {
+      margin-bottom: 10px; /* Add some space between the left and right sections */
+  }
+
+  .topbar-link,
+  .topbar-icon-link {
+      padding: 5px 0; /* Adjust padding for smaller screens */
+      border-right: none; /* Remove the border on smaller screens */
+  }
+
+  .topbar-icon-link {
+      margin-top: 5px; /* Add some space between social icons */
+  }
+}
