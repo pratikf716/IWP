@@ -5,6 +5,10 @@ import Testo from "./Pages/Testo";
 import Hero from "./Pages/Hero";
 import About from "./Pages/About";
 import Call from "./Pages/Call";
+import Service from "./Pages/Service";
+import GetAQuote from "./Pages/GetAQuote";
+import TeamCards from "./Pages/TeamCards";
+import BlogSection from "./Pages/BlogSection";
 function Home(){
     return(
         <>
@@ -12,8 +16,16 @@ function Home(){
          <Navbar></Navbar>
          <Hero></Hero>
          <About></About>
+         <Service></Service>
+         <GetAQuote></GetAQuote>
+         <TeamCards></TeamCards>
          <Testo></Testo>
+         <BlogSection></BlogSection>
          <Call></Call>
+         
+         
+         
+        
         
         </>
     )

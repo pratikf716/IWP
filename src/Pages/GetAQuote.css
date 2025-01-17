@@ -1,0 +1,10 @@
+.bg-quote {
+    background: url(../Images/quote.jpg) top right no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 991.98px) {
+    .bg-quote {
+        background-size: cover;
+    }
+}

@@ -1,0 +1,249 @@
+/* General styling for the blog section */
+.blog-item {
+    font-weight: bold;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 500px; /* Increased height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: rgb(17, 12, 12);
+    position: relative; /* Positioning context for absolute elements */
+}
+.blog-1 {
+    background-image: url("../Images/blog-1.jpg");
+}
+
+.blog-2 {
+    background-image: url("../Images/blog-2.jpg");
+}
+
+.blog-3 {
+    background-image: url("../Images/blog-3.jpg");
+}
+
+
+
+/* Image section styling */
+.blog-item .image-section {
+    position: absolute; /* Position the image absolutely */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure the image takes up the full width */
+    height: 300px; /* Set a fixed height for the image */
+    object-fit: cover; /* Make sure the image covers the container */
+    border-radius: 10px 10px 0 0;
+    display: block;
+    z-index: -1; /* Ensure the image stays behind the content */
+}
+
+/* Content section styling */
+/* Content section styling */
+.blog-item .content-section {
+    padding: 20px;
+    background-color: rgb(243, 243, 11); /* Set background color as yellow */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0 0 10px 10px; /* Round the bottom corners */
+    color: #333; /* Dark text for readability */
+    display: flex;
+    flex-direction: column; /* Allow the content to stack */
+    justify-content: flex-start; /* Ensure content starts from the top of the yellow section */
+    align-items: flex-start; /* Align items to the left */
+    padding-bottom: 10px; /* Add padding at the bottom to avoid content touching the edge */
+    z-index: 1; /* Keep the content above the image */
+}
+
+/* Container for the views and comments section */
+.blog-item .content-section .views-comments {
+    display: flex;
+    justify-content: flex-end; /* Align the views and comments to the right */
+    margin-top: auto; /* Push to the bottom of the card */
+    font-size: 0.9rem; /* Set font size */
+    color: #555; /* Set a lighter color */
+    padding-left: 40px;
+}
+
+/* Styling for the individual views and comments */
+.blog-item .content-section .views-comments small {
+    margin-left: 20px; /* Space between the two items */
+}
+
+/* Icon styling inside the small tags */
+.blog-item .content-section .views-comments i {
+    font-size: 1rem;
+    color: #666; /* Make the icons lighter */
+}
+
+/* Styling for the calendar and blog title */
+.blog-item .content-section .calendar-title-container {
+    display: flex;
+    align-items: center; /* Center-align the calendar and title vertically */
+    margin-bottom: 10px; /* Add space below */
+}
+
+.blog-item .content-section .calendar {
+    background-color: yellow; /* Set background color for calendar section */
+    padding: 10px;
+    border-radius: 5px;
+    color: #333; /* Dark text for readability */
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 15px; /* Add space between calendar and title */
+    position: relative;
+}
+
+/* Icon inside the calendar */
+.blog-item .content-section .calendar-icon {
+    margin-right: 10px; /* Space between icon and date */
+    color: #333; /* Set icon color */
+    font-size: 1.2rem;
+}
+
+/* Add a green horizontal line below the calendar */
+.blog-item .content-section .calendar::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Position the line just below the calendar */
+    left: 0;
+    width: 100%; /* Make the line full width */
+    height: 3px; /* Thickness of the line */
+    background-color: #09aa2c; /* Green color for the line */
+}
+
+/* Add a full-width green line below the calendar section */
+.blog-item .content-section::after {
+    content: "";
+    position: absolute;
+    bottom: 60px; /* Adjust position below the calendar section */
+    left: 0;
+    width: 100%; /* Full width of the card */
+    height: 3px; /* Line thickness */
+    background-color: #09aa2c; /* Green line color */
+}
+
+.blog-item .content-section .title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.2;
+    transition: color 0.3s ease;
+    margin-bottom: 15px; /* Add margin for spacing */
+}
+
+.blog-item .content-section .title:hover {
+    color: #09aa2c; /* Highlight title on hover */
+}
+
+/* Blog details */
+.blog-item .content-section .details {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* User avatar styling */
+.user-avatar {
+    width: 40px; /* Increase the avatar size */
+    height: 40px; /* Increase the avatar size */
+    border-radius: 50%;
+    background-color: #0e0909; /* Fallback for user initials */
+    background-size: cover; /* Ensure the background image covers the circle */
+    background-position: center; /* Center the image inside the circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 1rem; /* Larger font size */
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-right: 10px;
+}
+
+/* User initials when no image is available */
+.user-avatar span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem; /* Larger font size */
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+/* User name section */
+.blog-item .content-section .user-name {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Ensure alignment is left */
+    font-size: 1rem;
+    color: #333;
+    margin-top: auto; /* Push the user details to the bottom */
+    margin-bottom: 10px; /* Add margin for spacing */
+}
+
+/* Horizontal line for the user section */
+.blog-item .content-section .user-name::before {
+    content: "";
+    flex-grow: 1; /* Fill the available space */
+    border-bottom: 1px solid #ddd; /* Horizontal line */
+    margin-right: 20px; /* Space between line and user avatar */
+}
+
+/* Image section styling */
+.blog-item .image-section {
+    height: 300px;
+    width: 100%;
+    object-fit: cover; /* Ensure the image completely covers the space */
+    border-radius: 10px 10px 0 0;
+    display: block;
+    position: absolute; /* Ensure the image stays on top */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Image stays behind content */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .blog-item {
+        margin-bottom: 20px;
+    }
+
+    .blog-item .content-section {
+        padding: 15px;
+    }
+
+    .blog-item a {
+        font-size: 1rem;
+    }
+
+    /* Make title and other content responsive */
+    .blog-item .content-section .title {
+        font-size: 1.25rem;
+    }
+
+    .blog-item .content-section .details {
+        font-size: 0.9rem;
+    }
+
+    .blog-item .content-section .likes {
+        font-size: 1rem;
+    }
+
+    .user-avatar {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,83 @@
+:root {
+    --primary: #FFE468;
+    --secondary: #8CC641;
+    --light: #F2F2F2;
+    --dark: #272630;
+  }
+  
+
+
+
+
+.service-item,
+.contact-item {
+  background: url("/Images/service.jpg") top center no-repeat;
+  background-size: cover;
+  transition: 0.5s;
+}
+
+.service-item:hover,
+.contact-item:hover {
+  background: url("/Images/service.jpg") bottom center no-repeat;
+  background-size: cover;
+}
+
+.service-item .service-icon,
+.contact-item .contact-icon {
+  margin-top: -50px;
+  width: 100px;
+  height: 100px;
+  color: var(--secondary);
+  background: #ffffff;
+  transform: rotate(-45deg);
+}
+
+.service-item .service-icon div,
+.contact-item .contact-icon div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary);
+  transition: 0.5s;
+}
+
+.service-item .service-icon i,
+.contact-item .contact-icon i {
+  transform: rotate(45deg);
+  transition: 0.5s;
+}
+
+.service-item:hover .service-icon div,
+.contact-item:hover .contact-icon div {
+  background: var(--secondary);
+}
+
+.service-item:hover .service-icon i,
+.contact-item:hover .contact-icon i {
+  color: var(--primary);
+}
+
+.service-item a.btn {
+  position: relative;
+  bottom: -30px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.service-item:hover a.btn {
+  bottom: 0;
+  opacity: 1;
+}
+
+.bg-quote {
+  background: url("/Images/quote.jpg") top right no-repeat;
+  background-size: contain;
+}
+
+@media (max-width: 991.98px) {
+  .bg-quote {
+    background-size: cover;
+  }
+}
