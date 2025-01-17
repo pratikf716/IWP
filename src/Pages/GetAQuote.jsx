@@ -52,7 +52,7 @@ const GetAQuote = () => {
                     />
                   </div>
                   <div className="col-12">
-                    <button className="btn btn-primary w-100 py-3" type="submit">
+                    <button className="btn btn-warning w-100 py-3" type="submit">
                       Get A Quote
                     </button>
                   </div>

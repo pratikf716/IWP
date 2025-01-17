@@ -34,24 +34,25 @@
  }
  
  .client-img {
-   width: 60px;
-   height: 60px;
-   border-radius: 50%;
-   margin-right: 10px;
-  background-image: url(../Images/testimonial-1.jpg);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-image: url("../Images/testimonial-1.jpg"); /* Adjust the path if needed */
   background-size: cover;
-   padding: 5px;
- }
- .client-img2 {
-   width: 60px;
-   height: 60px;
-   border-radius: 50%;
-   margin-right: 10px;
-  background-image: url(../Images/testimonial-2.jpg);
+  background-position: center;
+}
+
+.client-img2 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-image: url("../Images/testimonial-2.jpg"); /* Adjust the path if needed */
   background-size: cover;
-   padding: 5px;
- }
- 
+  background-position: center;
+}
+
  .ps-3 h3 {
    margin: 0;
    font-size: 1.2rem;

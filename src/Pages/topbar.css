@@ -2,7 +2,7 @@
 .topbar-container {
   width: 100%;
   margin: 0;
-  background-color: #110055; /* Bootstrap Primary Color */
+  background-color: #101010; /* Bootstrap Primary Color */
 }
 
 .topbar-inner {
@@ -24,10 +24,10 @@
 
 /* Link styles for contact details */
 .topbar-link {
-  color: #070707;
+  color: #e4f1f3;
   text-decoration: none;
   padding: 0 15px;
-  border-right: 1px solid #ffffff80;
+  border-right: 1px solid #e50d0d80;
 }
 
 .topbar-link:last-child {
@@ -39,7 +39,7 @@
   color: #fff;
   text-decoration: none;
   padding: 0 15px;
-  border-right: 1px solid #ffffff80;
+  border-right: 1px solid #e60d0d80;
 }
 
 .topbar-icon-link:last-child {
