@@ -4,17 +4,17 @@ import './TeamCards.css'; // Importing the CSS file
 const TeamCards = () => {
     const teamMembers = [
         {
-            imgSrc: './Public/Images/team-1.jpg',
+            imgSrc: '/Images/team-1.jpg',
             name: 'John Doe',
             designation: 'Designer',
         },
         {
-            imgSrc: './Public/Images/team-2.jpg',
+            imgSrc: '/Images/team-2.jpg',
             name: 'Jane Smith',
             designation: 'Developer',
         },
         {
-            imgSrc: './Public/Images/team-3.jpg',
+            imgSrc: '/Images/team-3.jpg',
             name: 'Mike Johnson',
             designation: 'Manager',
         },
