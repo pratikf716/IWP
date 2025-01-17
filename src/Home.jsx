@@ -13,7 +13,7 @@ import Footer from "./Pages/Footer";
 function Home(){
     return(
         <>
-         <Topbar></Topbar>
+        
          <Navbar></Navbar>
          <Hero></Hero>
          <About></About>

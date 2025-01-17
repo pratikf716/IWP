@@ -46,8 +46,19 @@ html, body {
     margin-bottom: 20px;
     line-height: 1.0;
    margin-left: -110px;
+   text-transform: uppercase;
+   color: #223f72;
+   font-family:'Times New Roman', Times, serif;
 }
-
+.bg-hero .display-2{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.0;
+    margin-left: -90px;
+    text-transform: uppercase;
+    color: #001d3d;
+    font-family:'Times New Roman', Times, serif;
+}
 .bg-hero .fs-4 {
     font-size: 1rem;
     margin-bottom: 30px;
@@ -56,7 +67,9 @@ html, body {
     padding: 20px 10px;
     margin-left: -110px;
 }
-
+.pt-2{
+ margin-left: -90px;
+}
 .btn-secondary {
     background-color: #6c757d;
     color: #fff;
