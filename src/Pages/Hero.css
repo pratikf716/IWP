@@ -40,39 +40,53 @@ html, body {
     box-sizing: border-box;
 }
 
+/* Display 1 Styling */
 .bg-hero .display-1 {
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 1rem; /* Decreased size for "Welcome" */
     margin-bottom: 20px;
-    line-height: 1.0;
-   margin-left: -110px;
-   text-transform: uppercase;
-   color: #223f72;
-   font-family:'Times New Roman', Times, serif;
+    line-height: 0.9;
+    margin-left: -130px;
+    text-transform: uppercase;
+    color: #223f72;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    animation: fadeInUp 1.2s ease-in-out; /* Fade-in animation */
+    transition: color 0.3s ease-in-out; /* Smooth hover effect */
 }
-.bg-hero .display-2{
-    font-size: 3rem;
+
+/* Display 2 Styling */
+.bg-hero .display-2 {
+    font-size: 6rem; /* Increased size for "Indian Waterproofing Company" */
     font-weight: bold;
     line-height: 1.0;
-    margin-left: -90px;
+    margin-left: -130px;
     text-transform: uppercase;
     color: #001d3d;
-    font-family:'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    animation: fadeInUp 1.5s ease-in-out; /* Fade-in animation with delay */
+    transition: color 0.3s ease-in-out; /* Smooth hover effect */
 }
-.bg-hero .fs-4 {
-    font-size: 1rem;
-    margin-bottom: 30px;
-    line-height: 1.2;
-    color: #070606;
-    padding: 20px 10px;
-    margin-left: -110px;
+
+
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .pt-2{
- margin-left: -90px;
-}
+    margin-left: -130px;
+   }
+/* Button Styling */
+/* Primary Button */
 .btn-secondary {
-    background-color: #6c757d;
-    color: #fff;
+    background-color: #0b5079; /* Dark Blue */
+    color: #ffffff; /* White */
     border: none;
     padding: 18px 36px;
     font-size: 1.25rem;
@@ -82,15 +96,27 @@ html, body {
     margin-top: 20px;
 }
 
+/* On hover, ensure the background is white */
 .btn-secondary:hover {
-    background-color: #09aa2c;
+    background-color:transparent !important; /* White */
+    color: #0b5079 !important; /* Dark Blue */
+    border: 2px solid #0b5079 !important; /* Optional border */
     transform: translateY(-5px);
 }
 
+/* On focus and active, override any default styles like the green background */
+.btn-secondary:focus, .btn-secondary:active {
+    outline: none; /* Remove browser default outline */
+    background-color: #ffffff !important; /* White */
+    color: #0b5079 !important; /* Dark Blue */
+    border: 2px solid #0b5079 !important; /* Optional border */
+}
+
+/* Outline Button */
 .btn-outline-secondary {
-    background-color: #6c757d;
-    color: #fff;
-    border: none;
+    background-color:#0b5079 ; /* Transparent */
+    color: #f2f4f5; /* Dark Blue */
+    border: 2px solid #0b5079; /* Dark Blue Border */
     padding: 18px 36px;
     font-size: 1.25rem;
     border-radius: 30px;
@@ -98,9 +124,20 @@ html, body {
     margin-top: 20px;
 }
 
+/* On hover, ensure the background is white */
 .btn-outline-secondary:hover {
-    background-color: #09aa2c;
+    background-color:transparent !important; /* White */
+    color: #0b5079 !important; /* Dark Blue */
+    border: 2px solid #0b5079 !important; /* Dark Blue Border */
     transform: translateY(-5px);
+}
+
+/* On focus and active, override any default styles like the green background */
+.btn-outline-secondary:focus, .btn-outline-secondary:active {
+    outline: none; /* Remove browser default outline */
+    background-color: #ffffff !important; /* White */
+    color: #0b5079 !important; /* Dark Blue */
+    border: 2px solid #0b5079 !important; /* Optional border */
 }
 
 .bg-hero .btn {
@@ -175,7 +212,7 @@ html, body {
     }
 
     .bg-hero .display-1 {
-        font-size: 6rem;
+        font-size: 4rem;
     }
 
     .bg-hero .fs-4 {
