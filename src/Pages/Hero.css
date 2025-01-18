@@ -23,6 +23,7 @@ html, body {
     padding-bottom: 20px;
     text-align: left;
     box-sizing: border-box;
+    position: relative; /* Added to facilitate button centering */
 }
 
 .container-fluid {
@@ -34,7 +35,7 @@ html, body {
     color: #0c0a0a;
     text-align: left;
     margin-bottom: 20px;
-    padding: 40px;
+    padding: 100px;
     max-width: 100%;
     width: 100%;
     box-sizing: border-box;
@@ -42,7 +43,7 @@ html, body {
 
 /* Display 1 Styling */
 .bg-hero .display-1 {
-    font-size: 1rem; /* Decreased size for "Welcome" */
+    font-size: 100px; /* Decreased size for "Welcome" */
     margin-bottom: 20px;
     line-height: 0.9;
     margin-left: -130px;
@@ -55,7 +56,7 @@ html, body {
 
 /* Display 2 Styling */
 .bg-hero .display-2 {
-    font-size: 6rem; /* Increased size for "Indian Waterproofing Company" */
+    font-size: 70px; /* Increased size for "Indian Waterproofing Company" */
     font-weight: bold;
     line-height: 1.0;
     margin-left: -130px;
@@ -65,8 +66,6 @@ html, body {
     animation: fadeInUp 1.5s ease-in-out; /* Fade-in animation with delay */
     transition: color 0.3s ease-in-out; /* Smooth hover effect */
 }
-
-
 
 /* Fade-in Animation */
 @keyframes fadeInUp {
@@ -79,12 +78,13 @@ html, body {
         transform: translateY(0);
     }
 }
-.pt-2{
+
+.pt-2 {
     margin-left: -130px;
-   }
+}
+
 /* Button Styling */
-/* Primary Button */
-.btn-secondary {
+.btn-secondary, .btn-outline-secondary {
     background-color: #0b5079; /* Dark Blue */
     color: #ffffff; /* White */
     border: none;
@@ -92,62 +92,45 @@ html, body {
     font-size: 1.25rem;
     border-radius: 30px;
     transition: all 0.3s ease-in-out;
-    margin-right: 20px;
     margin-top: 20px;
+    display: inline-block;
 }
 
-/* On hover, ensure the background is white */
-.btn-secondary:hover {
-    background-color:transparent !important; /* White */
+.btn-secondary:hover, .btn-outline-secondary:hover {
+    background-color: transparent !important; /* White */
     color: #0b5079 !important; /* Dark Blue */
     border: 2px solid #0b5079 !important; /* Optional border */
     transform: translateY(-5px);
 }
 
-/* On focus and active, override any default styles like the green background */
-.btn-secondary:focus, .btn-secondary:active {
-    outline: none; /* Remove browser default outline */
+.btn-secondary:focus, .btn-outline-secondary:focus,
+.btn-secondary:active, .btn-outline-secondary:active {
+    outline: none;
     background-color: #ffffff !important; /* White */
     color: #0b5079 !important; /* Dark Blue */
-    border: 2px solid #0b5079 !important; /* Optional border */
-}
-
-/* Outline Button */
-.btn-outline-secondary {
-    background-color:#0b5079 ; /* Transparent */
-    color: #f2f4f5; /* Dark Blue */
-    border: 2px solid #0b5079; /* Dark Blue Border */
-    padding: 18px 36px;
-    font-size: 1.25rem;
-    border-radius: 30px;
-    transition: all 0.3s ease-in-out;
-    margin-top: 20px;
-}
-
-/* On hover, ensure the background is white */
-.btn-outline-secondary:hover {
-    background-color:transparent !important; /* White */
-    color: #0b5079 !important; /* Dark Blue */
-    border: 2px solid #0b5079 !important; /* Dark Blue Border */
-    transform: translateY(-5px);
-}
-
-/* On focus and active, override any default styles like the green background */
-.btn-outline-secondary:focus, .btn-outline-secondary:active {
-    outline: none; /* Remove browser default outline */
-    background-color: #ffffff !important; /* White */
-    color: #0b5079 !important; /* Dark Blue */
-    border: 2px solid #0b5079 !important; /* Optional border */
+    border: 2px solid #0b5079 !important;
 }
 
 .bg-hero .btn {
     margin-top: 20px;
+    display: inline-block; /* Make sure buttons align properly */
 }
 
+/* Center buttons in the hero section */
+.bg-hero .btn-container {
+    display: flex;
+    justify-content: center; /* Center buttons */
+    align-items: center;
+    gap: 20px; /* Add some space between buttons */
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+/* Responsive Adjustments */
 @media (max-width: 600px) {
     .bg-hero {
         padding-left: 20px;
         padding-right: 20px;
+        height: 70vh; /* Make it a bit smaller on small screens */
     }
 
     .bg-hero .col-lg-8 {
@@ -157,13 +140,14 @@ html, body {
     }
 
     .bg-hero .display-1 {
-        font-size: 3rem;
+        font-size: 2.5rem; /* Smaller font for mobile */
         margin-bottom: 10px;
+        margin-left: 0;
     }
 
-    .bg-hero .fs-4 {
-        font-size: 1.25rem;
-        margin-bottom: 15px;
+    .bg-hero .display-2 {
+        font-size: 2rem; /* Adjust the size for mobile */
+        margin-left: 0;
     }
 
     .btn-secondary, .btn-outline-secondary {
@@ -171,12 +155,17 @@ html, body {
         font-size: 1rem;
         margin-top: 10px;
     }
+
+    .bg-hero .btn-container {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+    }
 }
 
 @media (max-width: 1024px) and (min-width: 601px) {
     .bg-hero {
         padding-left: 30px;
         padding-right: 30px;
+        height: 75vh; /* Adjust height for medium screens */
     }
 
     .bg-hero .col-lg-8 {
@@ -186,16 +175,20 @@ html, body {
     }
 
     .bg-hero .display-1 {
-        font-size: 4.5rem;
+        font-size: 4rem; /* Medium font size */
     }
 
-    .bg-hero .fs-4 {
-        font-size: 1.75rem;
+    .bg-hero .display-2 {
+        font-size: 2.5rem; /* Adjust for tablet sizes */
     }
 
     .btn-secondary, .btn-outline-secondary {
         padding: 16px 32px;
         font-size: 1.125rem;
+    }
+
+    .bg-hero .btn-container {
+        flex-direction: row; /* Keep buttons horizontally aligned */
     }
 }
 
@@ -215,8 +208,8 @@ html, body {
         font-size: 4rem;
     }
 
-    .bg-hero .fs-4 {
-        font-size: 2rem;
+    .bg-hero .display-2 {
+        font-size: 3rem;
     }
 
     .btn-secondary, .btn-outline-secondary {
