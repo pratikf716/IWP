@@ -15,10 +15,10 @@ const GetAQuote = () => {
 
   return (
     <div className="container-fluid bg-primary bg-quote py-5" style={{ margin: '90px 0' }}>
-      <div className="container py-5">
+      <div className="container py-4">
         <div className="row g-0 justify-content-start">
-          <div className="col-lg-6">
-            <div className="bg-white text-center p-5">
+          <div className="col-lg-6 justify-content-start">
+            <div className=" bg text-center p-5">
               <h1 className="mb-4">Get A Quote</h1>
               <form onSubmit={handleSubmit}>
                 <div className="row g-3">

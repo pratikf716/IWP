@@ -1,5 +1,5 @@
 .bg-quote {
-    background: url(../Images/quote.jpg) top right no-repeat;
+    background: url(../Images/heroo.jpg) top right no-repeat;
     background-size: cover;
 }
 
@@ -8,3 +8,11 @@
         background-size: cover;
     }
 }
+.bg {
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Adds a blur effect to the background */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Adjust padding for better spacing */
+  }
+  
