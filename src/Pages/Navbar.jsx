@@ -9,15 +9,12 @@ const Navbar = () => {
       <a
         href="index.html"
         className="navbar-brand d-flex align-items-center"
-        onMouseEnter={() => setShowName(true)}
-        onMouseLeave={() => setShowName(false)}
+        // Remove mouseEnter and mouseLeave for fixed h1
       >
         <img className="logo" src="/Images/IWCLOGO.png" alt="img" />
-        {showName && (
-          <h1 className="m-0 text-uppercase text-white ms-3">
-            Indian Waterproofing Company
-          </h1>
-        )}
+        <h1 className="m-0 text-uppercase text-white ms-3">
+          Indian Waterproofing Company
+        </h1>
       </a>
       <button
         className="navbar-toggler"

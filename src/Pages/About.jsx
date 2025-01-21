@@ -1,8 +1,8 @@
 import React from "react";
 import "./About.css"; // Import external CSS file
-import img1 from "../Images/about-3.jpg"; // Correct import path for image
-import img2 from "../Images/about-5.jpg"; // Correct import path for image
-import img from "../Images/about-4.jpg";
+import img1 from "../Images/aboutt-3.jpg"; // Correct import path for image
+import img2 from "../Images/aboutt-5.jpg"; // Correct import path for image
+import img from "../Images/aboutt-4.jpg";
 
 const About = () => {
   const handleSubmit = (event) => {

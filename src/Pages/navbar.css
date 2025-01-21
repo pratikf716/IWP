@@ -1,28 +1,33 @@
+/* Logo Styling */
 .logo {
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
   background-color: white;
   transition: transform 0.3s ease;
 }
 
 .logo:hover {
-  transform: scale(1.1);
+  transform: scale(1.1); /* Scale effect on hover */
 }
 
+/* Navbar Brand Text */
 .navbar-brand h1 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;  /* Adjust font size for better visibility */
   font-weight: bold;
-  transition: opacity 0.3s ease;
+  opacity: 1;  /* Make sure it's always visible */
+  white-space: nowrap;
+  display: inline-block;
+  margin-left: 10px;
 }
 
 .navbar-brand h1 {
   display: inline-block;
-  white-space: nowrap;
 }
 
+/* Navbar Links Styling */
 .nav-item {
-  font-size: 1rem;
+  font-size: 0.9rem;  /* Slightly smaller font for nav items */
   font-weight: 500;
 }
 
@@ -30,10 +35,95 @@
   color: #ffc107 !important;
 }
 
+/* Navbar Toggler for Mobile */
 .navbar-toggler {
   border-color: #fff;
 }
 
 .navbar-toggler-icon {
   background-color: #fff;
+}
+
+/* Responsive Styles */
+
+/* Small Screens (Mobile) */
+@media (max-width: 576px) {
+  .logo {
+    height: 50px;
+    width: 50px;
+  }
+
+  .navbar-brand h1 {
+    font-size: 1rem; /* Smaller font size for mobile */
+    margin-left: 8px;
+  }
+
+  .navbar-nav {
+    text-align: center; /* Center-align nav items */
+  }
+
+  .nav-item {
+    font-size: 0.85rem; /* Smaller font size for nav items */
+    margin-bottom: 10px; /* Add some space between items */
+  }
+
+  .navbar-toggler {
+    display: block;
+    margin-left: auto;
+  }
+
+  .navbar-collapse {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* Medium Screens (Tablets) */
+@media (max-width: 768px) {
+  .logo {
+    height: 55px;
+    width: 55px;
+  }
+
+  .navbar-brand h1 {
+    font-size: 1.1rem; /* Slightly smaller text on tablet */
+  }
+
+  .navbar-nav {
+    text-align: center; /* Center-align nav items */
+  }
+
+  .nav-item {
+    font-size: 0.9rem; /* Standard size for nav items */
+  }
+
+  .navbar-collapse {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* Large Screens (Desktops and Tablets in Landscape Mode) */
+@media (min-width: 769px) {
+  .logo {
+    height: 60px;
+    width: 60px;
+  }
+
+  .navbar-brand h1 {
+    font-size: 1.2rem; /* Default font size for large screens */
+  }
+
+  .navbar-nav {
+    text-align: left; /* Left-align nav items */
+  }
+
+  .nav-item {
+    font-size: 1rem; /* Standard size for nav items */
+  }
+
+  .navbar-collapse {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 }
