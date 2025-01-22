@@ -1,4 +1,5 @@
 /* About Section Styles */
+
 .about-start,
 .about-end {
   padding: 100px;
@@ -64,11 +65,13 @@ textarea.form-control {
 .container-fluid {
   padding-left: 0;
   padding-right: 0;
+ 
 }
 
 .row {
   margin-left: 0;
   margin-right: 0;
+  
 }
 
 .position-relative {
@@ -92,13 +95,13 @@ textarea.form-control {
 @media (min-width: 992px) {
   .about-start {
     position: relative;
-    margin-right: -70px;
+    margin-right: -48px;
     z-index: 1;
   }
 
   .about-end {
     position: relative;
-    margin-left: -70px;
+    margin-left: -48px;
     z-index: 1;
   }
 }

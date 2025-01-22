@@ -21,7 +21,7 @@ function Home(){
          <GetAQuote></GetAQuote>
          <TeamCards></TeamCards>
          <Testo></Testo>
-         <BlogSection></BlogSection>
+        
          <Call></Call>
          <Footer></Footer>
          

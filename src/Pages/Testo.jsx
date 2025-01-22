@@ -125,8 +125,9 @@ const Testo = () => {
                 type="button"
                 data-bs-target="#testimonialCarousel"
                 data-bs-slide="prev"
+               
               >
-                <span className="carousel-control-prev-icon"></span>
+                <span className="carousel-control-prev-icon "></span>
                 <span className="visually-hidden">Previous</span>
               </button>
               <button
@@ -135,7 +136,7 @@ const Testo = () => {
                 data-bs-target="#testimonialCarousel"
                 data-bs-slide="next"
               >
-                <span className="carousel-control-next-icon"></span>
+                <span className="carousel-control-next-icon " ></span>
                 <span className="visually-hidden">Next</span>
               </button>
             </div>

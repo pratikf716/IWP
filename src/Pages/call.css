@@ -5,28 +5,46 @@
   height: 600px;
 }
 
-.bg-call-to-action h1 {
-  color: rgb(8, 8, 8);
-  font-weight: 900;
-  font-size: 2.5rem; /* Reduced font size */
+
+.custom-row {
+  margin-right: -110px;
+
 }
 
-.bg-call-to-action p {
+.custom-col {
+  background: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: right;
+  width: auto;
+}
+
+.custom-heading {
+  color:#0b5079;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.custom-paragraph {
+  color:#0b5079;
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.custom-button {
   color: #080808;
-  font-weight: 900;
-  font-size: 1.2rem; /* Reduced font size */
+  background-color: #0b5079;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s;
 }
 
-.bg-call-to-action a.btn {
-  color: rgb(21, 20, 20);
-  background-color: #6c757d; /* Secondary button color */
+.custom-button:hover {
+  background-color: #555555;
 }
-
-.bg-call-to-action a.btn:hover {
-  background-color: #555555; /* Darker hover color */
-}
-
-/* Custom alignment for the right side */
-.custom-right-align {
-  margin-right: 1px; /* Adjust margin to move closer to the right edge */
+.text{
+  color: blueviolet;
 }

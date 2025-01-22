@@ -38,32 +38,7 @@ const Navbar = () => {
           <a href="service.html" className="nav-item nav-link text-white">
             Service
           </a>
-          <div className="nav-item dropdown">
-            <a
-              href="#"
-              className="nav-link dropdown-toggle text-white"
-              data-bs-toggle="dropdown"
-            >
-              Pages
-            </a>
-            <div className="dropdown-menu m-0">
-              <a href="blog.html" className="dropdown-item">
-                Blog Grid
-              </a>
-              <a href="detail.html" className="dropdown-item">
-                Blog Detail
-              </a>
-              <a href="team.html" className="dropdown-item">
-                The Team
-              </a>
-              <a href="testimonial.html" className="dropdown-item">
-                Testimonial
-              </a>
-            </div>
-          </div>
-          <a href="contact.html" className="nav-item nav-link text-white">
-            Contact
-          </a>
+          
         </div>
         <div className="d-none d-lg-flex align-items-center ps-4">
           <i className="fa fa-2x fa-mobile-alt text-secondary me-3"></i>

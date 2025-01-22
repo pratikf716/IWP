@@ -1,8 +1,9 @@
 .testimonial-section {
   background-color: #0b5079;
-  background-size: cover;
-  margin: 90px 0;
+  padding: 20px 0; /* Decreased padding from 60px to 40px */
+  margin: 60px 0; /* Adjust margin if necessary */
 }
+
 
 .testimonial-section h1 {
   color: #fff;
@@ -16,15 +17,10 @@
 }
 
 .testimonial-item {
-  flex: 0 0 auto;
-  width: 300px;
-  margin-right: 20px;
-  padding: 20px;
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  scroll-snap-align: start;
+  padding: 20px; /* Reduced padding inside each testimonial item */
+  margin-bottom: 20px; /* Adjust spacing between testimonial items */
 }
+
 
 .testimonial-text {
   font-size: 1.25rem;
@@ -121,5 +117,32 @@
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  filter: invert(100%);
+  width: 80px; /* Size of the arrow */
+  height: 80px; /* Size of the arrow */
+  background-image: none; /* Remove default background */
+  color: white; /* Set arrow color */
+  font-size: 2rem; /* Increase arrow size */
 }
+
+.carousel-control-prev-icon::before {
+  content: '\2039'; /* Left arrow */
+  color: white; /* Arrow color */
+  font-size: 4.5rem; /* Arrow size */
+}
+
+.carousel-control-next-icon::before {
+  content: '\203A'; /* Right arrow */
+  color: white; /* Arrow color */
+  font-size: 4.5rem; /* Arrow size */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 0.8; /* Slight transparency */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1; /* Full visibility on hover */
+}
+
