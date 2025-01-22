@@ -2,8 +2,8 @@
 .about-start,
 .about-end {
   padding: 100px;
-  background-color: #fafafa;
-  /* Primary color */
+  background-color: rgba(250, 250, 250, 0.7); /* Transparent white background */
+  /* Primary color with transparency */
 }
 
 .about-start h1,
@@ -76,49 +76,53 @@ textarea.form-control {
 }
 
 .position-absolute {
-  position: absolute;
-}
-
-.about-start,
-.about-end {
-    
-    /* background-size: contain; */
-    background-size: cover;
-    transition: .5s;
-}
-.position-absolute {
-  padding: 0px 0px 0px 90px; /* 10px on left, right, and top; 50px on bottom */
+  padding: 0px 0px 0px 0px; /* 10px on left, right, and top; 50px on bottom */
   background-color: #0b5079;
   height: 610px;
   width: 610px;
 }
 
-
 .position-absolutee {
-  padding: 0px 90px 0px 0px; /* 10px on left, right, and top; 50px on bottom */
+  padding: 0px 0px 0px 0px; /* 10px on left, right, and top; 50px on bottom */
   background-color: #0b5079;
   height: 610px;
   width: 610px;
 }
 
 @media (min-width: 992px) {
-    .about-start {
-        position: relative;
-        margin-right: -90px;
-        z-index: 1;
-    }
+  .about-start {
+    position: relative;
+    margin-right: -70px;
+    z-index: 1;
+  }
 
-    .about-end {
-        position: relative;
-        margin-left: -90px;
-        z-index: 1;
-    }
+  .about-end {
+    position: relative;
+    margin-left: -70px;
+    z-index: 1;
+  }
 }
 
+/* Ensure background image covers the box fully */
+.about-start,
+.about-end {
+  background-size: cover;  /* Ensures image covers the box without stretching */
+  background-position: center center; /* Keeps the image centered */
+  transition: 0.5s;
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
 
+.about-start {
+  background-image: url('your-image-url.jpg'); /* Add your image URL here */
+}
+
+.about-end {
+  background-image: url('your-second-image-url.jpg'); /* Add another image URL if needed */
+}
+
+/* Styling for button hover */
 a.btn:hover {
-    background-color: #218838; /* Darker green on hover */
-    transform: translateY(-3px); /* Slight lift effect */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
+  background-color: #218838; /* Darker green on hover */
+  transform: translateY(-3px); /* Slight lift effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

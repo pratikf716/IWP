@@ -1,8 +1,9 @@
 import React from "react";
 import "./About.css"; // Import external CSS file
+import img from "../Images/abouttt-3.jpg";
 import img1 from "../Images/aboutt-3.jpg"; // Correct import path for image
-import img2 from "../Images/aboutt-5.jpg"; // Correct import path for image
-import img from "../Images/aboutt-4.jpg";
+import img2 from "../Images/abouttt-4.jpg"; // Correct import path for image
+
 
 const About = () => {
   const handleSubmit = (event) => {
@@ -41,7 +42,7 @@ const About = () => {
               <div className="position-relative h-100">
                 <img
                   className="position-absolute w-100 h-100"
-                  src={img} // Using the imported image variable
+                  src={img1} // Using the imported image variable
                   alt="About"
                   style={{ objectFit: "cover" }}
                 />
@@ -53,7 +54,7 @@ const About = () => {
               <div className="position-relative h-100">
                 <img
                   className="position-absolutee w-100 h-100"
-                  src={img2} // Using the imported image variable
+                  src={img} // Using the imported image variable
                   alt="About"
                   style={{ objectFit: "cover" }}
                 />
@@ -98,7 +99,7 @@ const About = () => {
               <div className="position-relative h-100">
                 <img
                   className="position-absolute w-100 h-100"
-                  src={img1} // Using the imported image variable
+                  src={img2} // Using the imported image variable
                   alt="About"
                   style={{ objectFit: "cover" }}
                 />

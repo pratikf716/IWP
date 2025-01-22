@@ -5,15 +5,17 @@ html, body {
     height: 100%;
     overflow-x: hidden;
     box-sizing: border-box;
-}
-
-.bg-hero {
-    background-image: url('../Images/heroo.jpg'); 
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
+    font-family: Tahoma;
+  }
+  
+  .bg-hero {
+    background-image: url('../Images/herooo.jpg'); 
+    /* background-image: url('../Images/image.png');  */
+    background-size: 100%;  /* Resize the background image to 80% of its original size */
+    background-position: center center;  /* Center the image */
+    background-repeat: no-repeat;  /* Prevent image repetition */
+    width: 100px;
+    height: 80vh;  /* Full viewport height */
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -23,15 +25,16 @@ html, body {
     padding-bottom: 20px;
     text-align: left;
     box-sizing: border-box;
-    position: relative; /* Added to facilitate button centering */
-}
-
-.container-fluid {
+    position: relative; /* Allows content positioning */
+  }
+  
+  
+  .container-fluid {
     padding: 0;
     width: 100%;
-}
-
-.bg-hero .col-lg-8 {
+  }
+  
+  .bg-hero .col-lg-8 {
     color: #0c0a0a;
     text-align: left;
     margin-bottom: 20px;
@@ -39,54 +42,54 @@ html, body {
     max-width: 100%;
     width: 100%;
     box-sizing: border-box;
-}
-
-/* Display 1 Styling */
-.bg-hero .display-1 {
-    font-size: 100px; /* Decreased size for "Welcome" */
+  }
+  
+  /* Display 1 Styling */
+  .bg-hero .display-1 {
+    font-size: 100px;
     margin-bottom: 20px;
     line-height: 0.9;
     margin-left: -130px;
     text-transform: uppercase;
     color: #223f72;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    animation: fadeInUp 1.2s ease-in-out; /* Fade-in animation */
-    transition: color 0.3s ease-in-out; /* Smooth hover effect */
-}
-
-/* Display 2 Styling */
-.bg-hero .display-2 {
-    font-size: 70px; /* Increased size for "Indian Waterproofing Company" */
+    animation: fadeInUp 1.2s ease-in-out; 
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Display 2 Styling */
+  .bg-hero .display-2 {
+    font-size: 70px;
     font-weight: bold;
     line-height: 1.0;
     margin-left: -130px;
     text-transform: uppercase;
     color: #001d3d;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    animation: fadeInUp 1.5s ease-in-out; /* Fade-in animation with delay */
-    transition: color 0.3s ease-in-out; /* Smooth hover effect */
-}
-
-/* Fade-in Animation */
-@keyframes fadeInUp {
+    animation: fadeInUp 1.5s ease-in-out;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeInUp {
     0% {
-        opacity: 0;
-        transform: translateY(20px);
+      opacity: 0;
+      transform: translateY(20px);
     }
     100% {
-        opacity: 1;
-        transform: translateY(0);
+      opacity: 1;
+      transform: translateY(0);
     }
-}
-
-.pt-2 {
+  }
+  
+  .pt-2 {
     margin-left: -130px;
-}
-
-/* Button Styling */
-.btn-secondary, .btn-outline-secondary {
-    background-color: #0b5079; /* Dark Blue */
-    color: #ffffff; /* White */
+  }
+  
+  /* Button Styling */
+  .btn-secondary, .btn-outline-secondary {
+    background-color: #0b5079;
+    color: #ffffff;
     border: none;
     padding: 18px 36px;
     font-size: 1.25rem;
@@ -94,126 +97,127 @@ html, body {
     transition: all 0.3s ease-in-out;
     margin-top: 20px;
     display: inline-block;
-}
-
-.btn-secondary:hover, .btn-outline-secondary:hover {
-    background-color: transparent !important; /* White */
-    color: #0b5079 !important; /* Dark Blue */
-    border: 2px solid #0b5079 !important; /* Optional border */
-    transform: translateY(-5px);
-}
-
-.btn-secondary:focus, .btn-outline-secondary:focus,
-.btn-secondary:active, .btn-outline-secondary:active {
-    outline: none;
-    background-color: #ffffff !important; /* White */
-    color: #0b5079 !important; /* Dark Blue */
+  }
+  
+  .btn-secondary:hover, .btn-outline-secondary:hover {
+    background-color: transparent !important;
+    color: #0b5079 !important;
     border: 2px solid #0b5079 !important;
-}
-
-.bg-hero .btn {
+    transform: translateY(-5px);
+  }
+  
+  .btn-secondary:focus, .btn-outline-secondary:focus,
+  .btn-secondary:active, .btn-outline-secondary:active {
+    outline: none;
+    background-color: #ffffff !important;
+    color: #0b5079 !important;
+    border: 2px solid #0b5079 !important;
+  }
+  
+  .bg-hero .btn {
     margin-top: 20px;
-    display: inline-block; /* Make sure buttons align properly */
-}
-
-/* Center buttons in the hero section */
-.bg-hero .btn-container {
+    display: inline-block;
+  }
+  
+  /* Center buttons in the hero section */
+  .bg-hero .btn-container {
     display: flex;
     justify-content: center; /* Center buttons */
     align-items: center;
-    gap: 20px; /* Add some space between buttons */
-    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
-}
-
-/* Responsive Adjustments */
-@media (max-width: 600px) {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 600px) {
     .bg-hero {
-        padding-left: 20px;
-        padding-right: 20px;
-        height: 70vh; /* Make it a bit smaller on small screens */
+      padding-left: 20px;
+      padding-right: 20px;
+      height: 70vh;  /* Adjust height on smaller screens */
     }
-
+  
     .bg-hero .col-lg-8 {
-        padding: 20px;
-        max-width: 100%;
-        width: 100%;
+      padding: 20px;
+      max-width: 100%;
+      width: 100%;
     }
-
+  
     .bg-hero .display-1 {
-        font-size: 2.5rem; /* Smaller font for mobile */
-        margin-bottom: 10px;
-        margin-left: 0;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      margin-left: 0;
     }
-
+  
     .bg-hero .display-2 {
-        font-size: 2rem; /* Adjust the size for mobile */
-        margin-left: 0;
+      font-size: 2rem;
+      margin-left: 0;
     }
-
+  
     .btn-secondary, .btn-outline-secondary {
-        padding: 12px 24px;
-        font-size: 1rem;
-        margin-top: 10px;
+      padding: 12px 24px;
+      font-size: 1rem;
+      margin-top: 10px;
     }
-
+  
     .bg-hero .btn-container {
-        flex-direction: column; /* Stack buttons vertically on smaller screens */
+      flex-direction: column;
     }
-}
-
-@media (max-width: 1024px) and (min-width: 601px) {
+  }
+  
+  @media (max-width: 1024px) and (min-width: 601px) {
     .bg-hero {
-        padding-left: 30px;
-        padding-right: 30px;
-        height: 75vh; /* Adjust height for medium screens */
+      padding-left: 30px;
+      padding-right: 30px;
+      height: 75vh;  /* Adjust height for medium screens */
     }
-
+  
     .bg-hero .col-lg-8 {
-        padding: 30px;
-        max-width: 100%;
-        width: 100%;
+      padding: 30px;
+      max-width: 100%;
+      width: 100%;
     }
-
+  
     .bg-hero .display-1 {
-        font-size: 4rem; /* Medium font size */
+      font-size: 4rem;
     }
-
+  
     .bg-hero .display-2 {
-        font-size: 2.5rem; /* Adjust for tablet sizes */
+      font-size: 2.5rem;
     }
-
+  
     .btn-secondary, .btn-outline-secondary {
-        padding: 16px 32px;
-        font-size: 1.125rem;
+      padding: 16px 32px;
+      font-size: 1.125rem;
     }
-
+  
     .bg-hero .btn-container {
-        flex-direction: row; /* Keep buttons horizontally aligned */
+      flex-direction: row;
     }
-}
-
-@media (min-width: 1025px) {
+  }
+  
+  @media (min-width: 1025px) {
     .bg-hero {
-        padding-left: 50px;
-        padding-right: 40px;
+      padding-left: 50px;
+      padding-right: 40px;
     }
-
+  
     .bg-hero .col-lg-8 {
-        padding: 40px;
-        max-width: 900px;
-        width: 100%;
+      padding: 40px;
+      max-width: 900px;
+      width: 100%;
     }
-
+  
     .bg-hero .display-1 {
-        font-size: 4rem;
+      font-size: 4rem;
     }
-
+  
     .bg-hero .display-2 {
-        font-size: 3rem;
+      font-size: 3rem;
     }
-
+  
     .btn-secondary, .btn-outline-secondary {
-        padding: 18px 36px;
-        font-size: 1.25rem;
+      padding: 18px 36px;
+      font-size: 1.25rem;
     }
-}
+  }
+  
