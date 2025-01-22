@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.css'; // Import the external CSS file
-
+import '@fontsource/lexend-deca/900.css'; // Optional for additional weights
 const Hero = () => {
   return (
     <div className="container-fluid bg-primary py-5 bg-hero" style={{ marginBottom: '0px' }}>

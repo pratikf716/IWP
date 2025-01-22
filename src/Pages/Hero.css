@@ -5,7 +5,8 @@ html, body {
   height: 100%;
   overflow-x: hidden;
   box-sizing: border-box;
-  font-family: Tahoma;
+  font-family: 'Lexend Deca', sans-serif;
+  
 }
 
 .bg-hero {
@@ -53,9 +54,11 @@ html, body {
   margin-left: -130px;
   text-transform: uppercase;
   color: #223f72;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  
   animation: fadeInUp 1.2s ease-in-out; 
   transition: color 0.3s ease-in-out;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 700;
 }
 
 /* Display 2 Styling */
@@ -66,7 +69,8 @@ html, body {
   margin-left: -130px;
   text-transform: uppercase;
   color: #001d3d;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 900;
   animation: fadeInUp 1.5s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
