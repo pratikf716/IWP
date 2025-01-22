@@ -14,7 +14,7 @@ const GetAQuote = () => {
   };
 
   return (
-    <div className="container-fluid bg-primary bg-quote py-5" style={{ margin: '90px 0' }}>
+    <div className="container-fluid bg-primary bg-quote " style={{ margin: '0px 0' }}>
       <div className="container py-4">
         <div className="row g-0 justify-content-start">
           <div className="col-lg-6 justify-content-start">

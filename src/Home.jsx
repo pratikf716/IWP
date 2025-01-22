@@ -10,6 +10,7 @@ import GetAQuote from "./Pages/GetAQuote";
 import TeamCards from "./Pages/TeamCards";
 import BlogSection from "./Pages/BlogSection";
 import Footer from "./Pages/Footer";
+
 function Home(){
     return(
         <>
@@ -20,16 +21,12 @@ function Home(){
          <Service></Service>
          <GetAQuote></GetAQuote>
          <TeamCards></TeamCards>
-         <Testo></Testo>
-        
+         <Testo></Testo>      
          <Call></Call>
          <Footer></Footer>
          
          
-         
-         
-        
-        
+               
         </>
     )
 }

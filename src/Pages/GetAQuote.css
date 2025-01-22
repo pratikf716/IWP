@@ -1,4 +1,7 @@
-
+*{
+    padding: 0;
+    margin: 0;
+}
 
 @media (max-width: 991.98px) {
     .bg-quote {
@@ -25,6 +28,6 @@
     backdrop-filter: blur(10px);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 0px;
     width: 70%; /* Adjust width as needed */
 }

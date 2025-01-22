@@ -12,7 +12,7 @@ const Service = () => {
   ];
 
   return (
-    <div className="container-fluid py-5">
+    <div className="container-fluid ">
       <div className="container py-5">
         <div className="text-center mx-auto mb-5" style={{ maxWidth: "500px" }}>
           <h1 className="display-5">Professional Painting Services</h1>
