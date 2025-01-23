@@ -1,6 +1,6 @@
 :root {
     --primary: #0b5079;
-    --secondary: #020f17;
+    --secondary: #f3f4f5;
     --light: #dc2121;
     --dark: #eeeef1;
   }
@@ -14,15 +14,17 @@
 
 .service-item,
 .contact-item {
-  background: url("../Images/imagecopy.png") top center no-repeat;
+  background: url("../Images/img21.png") top center no-repeat;
   background-size: cover;
   transition: 0.5s;
+ background-size: 60%;
 }
 
 .service-item:hover,
 .contact-item:hover {
-  background: url("../Images/imagecopy.png") bottom center no-repeat;
+  background: url("../Images/img21.png") bottom center no-repeat;
   background-size: cover;
+  background-size: 70%;
 }
 
 .service-item .service-icon,
@@ -33,6 +35,7 @@
   color: var(--secondary);
   background: #ffffff;
   transform: rotate(-45deg);
+
 }
 
 .service-item .service-icon div,

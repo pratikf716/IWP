@@ -4,47 +4,47 @@ import './Footer.css';
 const Footer = () => {
   return (
     <>
-      <div className="container-fluid  bg-footer text-light py-5"  style={{background:'#083b5a'}}>
+      <div className="container-fluid  bg-footer text-light py-5 content"  >
         <div className="container py-5">
           <div className="row g-5">
             <div className="col-lg-3 col-md-6">
               <h4 className="text">Get In Touch</h4>
               <hr className="w-25 text-secondary mb-4" style={{ opacity: 1 }} />
-              <p className="mb-4">No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor</p>
-              <p className="mb-2"><i className="fa fa-map-marker-alt text-info me-3"></i>123 Street, New York, USA</p>
-              <p className="mb-2"><i className="fa fa-envelope text-info me-3"></i>info@example.com</p>
-              <p className="mb-0"><i className="fa fa-phone-alt text-info me-3"></i>+012 345 67890</p>
+              <p className="mb-4" style={{color:' #04334f'}}>No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor</p>
+              <p className="mb-2"style={{color:' #04334f'}}><i className="fa fa-map-marker-alt text-info me-3"></i>123 Street, New York, USA</p>
+              <p className="mb-2"style={{color:' #04334f'}}><i className="fa fa-envelope text-info me-3"></i>info@example.com</p>
+              <p className="mb-0"style={{color:' #04334f'}}><i className="fa fa-phone-alt text-info me-3"></i>+012 345 67890</p>
             </div>
             <div className="col-lg-3 col-md-6">
               <h4 className="text">Our Services</h4>
               <hr className="w-25 text-secondary mb-4" style={{ opacity: 1 }} />
-              <div className="d-flex flex-column justify-content-start">
-                <a className="text-light mb-2" href="#"><i className="fa fa-angle-right me-2"></i>Regular Painting</a>
-                <a className="text-light mb-2" href="#"><i className="fa fa-angle-right me-2"></i>Wall Painting</a>
-                <a className="text-light mb-2" href="#"><i className="fa fa-angle-right me-2"></i>Floor Coating</a>
-                <a className="text-light mb-2" href="#"><i className="fa fa-angle-right me-2"></i>Graffiti Removal</a>
-                <a className="text-light mb-2" href="#"><i className="fa fa-angle-right me-2"></i>Mildew Removal</a>
-                <a className="text-light" href="#"><i className="fa fa-angle-right me-2"></i>Window Washing</a>
+              <div className="d-flex flex-column justify-content-start"style={{color:' #04334f'}}>
+                <a className=" mb-2" href="#"><i className="fa fa-angle-right me-2"></i>Regular Painting</a>
+                <a className=" mb-2" href="#"><i className="fa fa-angle-right me-2"></i>Wall Painting</a>
+                <a className=" mb-2" href="#"><i className="fa fa-angle-right me-2"></i>Floor Coating</a>
+                <a className=" mb-2" href="#"><i className="fa fa-angle-right me-2"></i>Graffiti Removal</a>
+                <a className=" mb-2" href="#"><i className="fa fa-angle-right me-2"></i>Mildew Removal</a>
+                <a className="" href="#"><i className="fa fa-angle-right me-2"></i>Window Washing</a>
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
               <h4 className="text">Quick Links</h4>
               <hr className="w-25 text-secondary mb-4" style={{ opacity: 1 }} />
-              <div className="d-flex flex-column justify-content-start">
-                <a className="text-light mb-2" href="#"><i className="fa fa-angle-right me-2"></i>Home</a>
-                <a className="text-light mb-2" href="#"><i className="fa fa-angle-right me-2"></i>About Us</a>
-                <a className="text-light mb-2" href="#"><i className="fa fa-angle-right me-2"></i>Our Services</a>
-                <a className="text-light mb-2" href="#"><i className="fa fa-angle-right me-2"></i>Meet The Team</a>
-                <a className="text-light mb-2" href="#"><i className="fa fa-angle-right me-2"></i>Latest Blog</a>
-                <a className="text-light" href="#"><i className="fa fa-angle-right me-2"></i>Contact Us</a>
+              <div className="d-flex flex-column justify-content-start" style={{color:' #04334f'}}>
+                <a className=" mb-2" href="#"><i className="fa fa-angle-right me-2"></i>Home</a>
+                <a className=" mb-2" href="#"><i className="fa fa-angle-right me-2"></i>About Us</a>
+                <a className=" mb-2" href="#"><i className="fa fa-angle-right me-2"></i>Our Services</a>
+                <a className=" mb-2" href="#"><i className="fa fa-angle-right me-2"></i>Meet The Team</a>
+                <a className=" mb-2" href="#"><i className="fa fa-angle-right me-2"></i>Latest Blog</a>
+                <a className="" href="#"><i className="fa fa-angle-right me-2"></i>Contact Us</a>
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
               <h4 className="text">Newsletter</h4>
-              <hr className="w-25 text-secondary mb-4" style={{ opacity: 1 }} />
+              <hr className="w-25  mb-4" style={{ opacity: 1 }} />
               <form action="">
-                <div className="input-group">
-                  <input type="text" className="form-control p-3 border-0" placeholder="Your Email" />
+                <div className="input-group"style={{color:' #04334f'}}>
+                  <input type="text" className="form-control p-3 border-0" placeholder="Your Email"style={{background:'rgb(192, 219, 234)', color:'#04334f'}} />
                   <button className="btn btn-info">Sign Up</button>
                 </div>
               </form>
@@ -66,7 +66,7 @@ const Footer = () => {
               <p className="mb-md-0">Copyright &copy; <a className="text-white fw-bold" href="#">Your Site Name</a>. All Rights Reserved.</p>
             </div>
             <div className="col-md-6 text-center text-md-end">
-              <p className="mb-0">Designed by <a href="https://pawartechnologyservices.com/" target="_blank" className="footer-link" style={{ color: 'orange' }}>PTS</a></p>
+              <p className="mb-0">Designed by <a href="https://pawartechnologyservices.com/" target="_blank" className="footer-link" style={{ color: 'or' }}>PTS</a></p>
             </div>
           </div>
         </div>

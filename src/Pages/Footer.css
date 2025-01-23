@@ -25,18 +25,20 @@
   
   .text-light a:hover {
     text-decoration: underline;
-    color: #FFE468;
+    color: rgb(227, 16, 16);
   }
   
   /* Headings */
   h4 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    
   }
   
   /* Inputs and Buttons */
   .input-group input {
     border-radius: 10px;
+   
   }
   
   .btn {
@@ -91,5 +93,11 @@
   
   .footer-link:hover {
     text-decoration: underline;
+  }
+  .content{
+    background: rgba(247, 246, 246, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1)
   }
   

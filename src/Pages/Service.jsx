@@ -18,10 +18,10 @@ const Service = () => {
           <h1 className="display-5">Professional Painting Services</h1>
           <hr className="w-25 mx-auto text-primary" style={{ opacity: 1 }} />
         </div>
-        <div className="row gy-4 gx-3">
+        <div className="row gy-4 gx-3" >
           {services.map((service, index) => (
             <div key={index} className="col-lg-4 col-md-6 pt-5">
-              <div className="service-item d-flex flex-column align-items-center justify-content-center text-center p-5 pt-0">
+              <div className="service-item d-flex flex-column align-items-center justify-content-center text-center p-5 pt-0" style={{backgroundImage:''}} >
                 <div className="service-icon p-3">
                   <div>
                     <i className={`fa fa-2x ${service.icon}`}></i>

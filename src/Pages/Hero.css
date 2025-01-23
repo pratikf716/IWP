@@ -53,7 +53,7 @@ html, body {
   line-height: 0.9;
   margin-left: -130px;
   text-transform: uppercase;
-  color: #223f72;
+  color: white;
   
   animation: fadeInUp 1.2s ease-in-out; 
   transition: color 0.3s ease-in-out;
@@ -63,14 +63,14 @@ html, body {
 
 /* Display 2 Styling */
 .bg-hero .display-2 {
-  font-size: 70px;
+  font-size: 20px;
   font-weight: bold;
-  line-height: 1.0;
+  line-height: 1;
   margin-left: -130px;
-  text-transform: uppercase;
-  color: #001d3d;
+  
+  color: white;
   font-family: 'Lexend Deca', sans-serif;
-  font-weight: 900;
+  font-weight: 500;
   animation: fadeInUp 1.5s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
@@ -88,7 +88,7 @@ html, body {
 }
 
 .pt-2 {
-  margin-left: -130px;
+  margin-left: -150px;
 }
 
 /* Button Styling */
