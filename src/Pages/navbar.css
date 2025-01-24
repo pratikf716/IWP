@@ -21,10 +21,6 @@
   margin-left: 10px;
 }
 
-.navbar-brand h1 {
-  display: inline-block;
-}
-
 /* Navbar Links Styling */
 .nav-item {
   font-size: 0.9rem;  /* Slightly smaller font for nav items */
@@ -56,6 +52,7 @@
   .navbar-brand h1 {
     font-size: 1rem; /* Smaller font size for mobile */
     margin-left: 8px;
+    display: none; /* Hide the text on mobile screens */
   }
 
   .navbar-nav {
@@ -67,13 +64,15 @@
     margin-bottom: 10px; /* Add some space between items */
   }
 
-  .navbar-toggler {
-    display: block;
-    margin-left: auto;
-  }
-
   .navbar-collapse {
     flex-direction: column;
+    justify-content: center;
+  }
+
+  /* Align logo and navbar items on one line */
+  .navbar-brand, .navbar-nav {
+    display: flex;
+    align-items: center;
     justify-content: center;
   }
 }

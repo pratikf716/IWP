@@ -14,9 +14,9 @@
 
 .service-item,
 .contact-item {
-  background: url("../Images/imgbrush-Photoroom.jpg") top center no-repeat;
  
-background-color: transparent;
+border-radius: 4px;
+border: 1px solid black;
   background-size: cover;
   transition: 0.5s;
  background-size: 60%;
@@ -24,7 +24,7 @@ background-color: transparent;
 
 .service-item:hover,
 .contact-item:hover {
-  background: url("../Images/imgbrush-Photoroom.jpg") bottom center no-repeat;
+background-color: #0b5079;
  
   background-size: cover;
   background-size: 70%;
