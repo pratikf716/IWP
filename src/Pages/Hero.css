@@ -6,7 +6,7 @@ html, body {
   overflow-x: hidden;
   box-sizing: border-box;
   font-family: 'Lexend Deca', sans-serif;
-  
+ 
 }
 
 .bg-hero {
@@ -27,6 +27,7 @@ html, body {
   text-align: left;
   box-sizing: border-box;
   position: relative; /* Allows content positioning */
+ 
 }
 
 

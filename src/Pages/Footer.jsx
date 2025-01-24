@@ -145,7 +145,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="container-fluid footer-bottom text-white py-1">
+      <div className="container-fluid footer-bottom text-white py-4">
         <div className="container">
           <div className="row g-0">
             <div className="col-md-6 text-center text-md-start">
