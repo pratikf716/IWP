@@ -31,3 +31,16 @@
     padding: 0px;
     width: 70%; /* Adjust width as needed */
 }
+@media (max-width: 600px) {
+    .bg {
+      margin-left: auto; /* Center horizontally */
+      margin-right: auto; /* Center horizontally */
+      width: 90%; /* Adjust width to fit mobile view */
+      padding: 15px; /* Add some padding for better spacing */
+    }
+  
+    .bg-quote {
+      justify-content: center; /* Center the content horizontally */
+    }
+  }
+  

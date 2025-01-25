@@ -20,7 +20,7 @@ function Home(){
          <About></About>
          <Service></Service>
          <GetAQuote></GetAQuote>
-         <TeamCards></TeamCards>
+         
          <Testo></Testo>      
          <Call></Call>
          <Footer></Footer>

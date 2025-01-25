@@ -1,48 +1,45 @@
 :root {
-    --primary: #0b5079;
-    --secondary: #f3f4f5;
-    --light: #dc2121;
-    --dark: #eeeef1;
-  }
-  
+  --primary: #0b5079;
+  --secondary: #f3f4f5;
+  --light: #dc2121;
+  --dark: #eeeef1;
+}
 
-.container-fluid{
+.container-fluid {
   padding: 0;
   margin: 0;
 }
 
-
-.service-item,
-.contact-item {
- 
-border-radius: 4px;
-border: 1px solid black;
+.service-item {
   background-size: cover;
-  transition: 0.5s;
- background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+  border: 1px solid black;
+  height: 300px; /* Ensure all containers have the same size */
+  transition: transform 0.5s, background-size 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-center; /* Moves title to bottom */
+  padding-bottom: 20px;
+ 
 }
 
-.service-item:hover,
-.contact-item:hover {
-background-color: #0b5079;
- 
-  background-size: cover;
-  background-size: 70%;
+.service-item:hover {
+  background-size: 110%; /* Slightly increases background size */
+  transform: scale(1.05); /* Grows the container slightly on hover */
 }
 
-.service-item .service-icon,
-.contact-item .contact-icon {
-  margin-top: -50px;
-  width: 100px;
-  height: 100px;
+.service-item .service-icon {
+  margin-top: -30px;
+  width: 80px;
+  height: 80px;
   color: var(--secondary);
   background: #ffffff;
   transform: rotate(-45deg);
-
 }
 
-.service-item .service-icon div,
-.contact-item .contact-icon div {
+.service-item .service-icon div {
   width: 100%;
   height: 100%;
   display: flex;
@@ -52,20 +49,26 @@ background-color: #0b5079;
   transition: 0.5s;
 }
 
-.service-item .service-icon i,
-.contact-item .contact-icon i {
+.service-item .service-icon i {
   transform: rotate(45deg);
   transition: 0.5s;
 }
 
-.service-item:hover .service-icon div,
-.contact-item:hover .contact-icon div {
+.service-item:hover .service-icon div {
   background: var(--secondary);
 }
 
-.service-item:hover .service-icon i,
-.contact-item:hover .contact-icon i {
+.service-item:hover .service-icon i {
   color: var(--primary);
+}
+
+.service-item h3 {
+  font-size: 16px;
+  margin: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6); /* Adds a dark background for better text visibility */
+  padding: 5px;
+  border-radius: 4px;
 }
 
 .service-item a.btn {
@@ -80,13 +83,31 @@ background-color: #0b5079;
   opacity: 1;
 }
 
-.bg-quote {
-  background: url("/Images/quote.jpg") top right no-repeat;
-  background-size: contain;
-}
 
 @media (max-width: 991.98px) {
   .bg-quote {
     background-size: cover;
   }
+}
+
+.service-item .title1 {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  margin: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6); /* Adds a dark background for better text visibility */
+  padding: 5px 10px;
+  border-radius: 4px;
+  opacity: 0; /* Hidden by default */
+  transform: translateY(20px); /* Slide-in effect */
+  transition: opacity 0.5s, transform 0.5s; /* Smooth transition */
+
+}
+
+.service-item:hover .title1 {
+  opacity: 1; /* Show title on hover */
+  transform: translateY(0); /* Move to its original position */
 }

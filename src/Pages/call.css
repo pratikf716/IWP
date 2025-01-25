@@ -48,3 +48,36 @@
 .text{
   color: blueviolet;
 }
+
+@media (max-width: 600px) {
+  .bg-call-to-action {
+    height: auto; /* Adjust height for smaller screens */
+    padding: 20px; /* Add padding for better spacing */
+  }
+
+  .custom-row {
+    justify-content: center; /* Center the content horizontally */
+    margin-right: 0; /* Remove extra right margin */
+  }
+
+  .custom-col {
+    margin: 0 auto; /* Center the column horizontally */
+    text-align: center; /* Center the text content */
+    padding: 15px; /* Adjust padding for smaller screens */
+    width: 100%; /* Take full width for better layout */
+  }
+
+  .custom-heading {
+    font-size: 1.25rem; /* Adjust font size for smaller screens */
+  }
+
+  .custom-paragraph {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+    line-height: 1.5; /* Adjust line height */
+  }
+
+  .custom-button {
+    display: inline-block;
+    font-size: 0.9rem; /* Adjust font size for the button */
+  }
+}
