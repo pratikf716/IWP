@@ -36,7 +36,7 @@ const Navbar = () => {
             About
           </a>
           <a href="service.html" className="nav-item nav-link text-white">
-            Service
+            Services
           </a>
           
         </div>

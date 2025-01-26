@@ -7,7 +7,7 @@ const Service = () => {
     { icon: "fa-paint-roller", title: "3. MEMBRANE WATERPROOFING TREATMENT", bgImage: "../Images/service3.png" },
     { icon: "fa-paint-roller", title: "4. POLYURETHANE COATING", bgImage: "../Images/service4.png" },
     { icon: "fa-paint-roller", title: "5. EPOXY COATING", bgImage: "../Images/service5.png" },
-    { icon: "fa-paint-roller", title: "6. High-Density Polyethylene", bgImage: "../Images/service6.png" },
+    { icon: "fa-paint-roller", title: "6. HIGH-DENSITY POLYETHYLENE", bgImage: "../Images/service6.png" },
   ];
 
   return (

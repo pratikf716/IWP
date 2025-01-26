@@ -92,13 +92,16 @@ const Footer = () => {
                 No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor
               </p>
               <p className="footer-item">
-                <i className="fa fa-map-marker-alt text-info me-3"></i>123 Street, New York, USA
+              <i className="fa fa-map-marker-alt" style={{ color: '#0b5079' }} me-3></i>
+              123 Street, New York, USA
               </p>
               <p className="footer-item">
-                <i className="fa fa-envelope text-info me-3"></i>info@example.com
+              <i className="fa fa-envelope" style={{ color: '#0b5079' }} me-3></i>
+                info@example.com
               </p>
               <p className="footer-item">
-                <i className="fa fa-phone-alt text-info me-3"></i>+012 345 67890
+              <i className="fa fa-phone-alt" style={{ color: '#0b5079' }} me-3></i>
+              +012 345 67890
               </p>
             </div>
             <div className="col-lg-3 col-md-6">

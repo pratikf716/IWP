@@ -23,7 +23,7 @@
 }
 
 .bg {
-    margin-left: -15%; /* Adjust margin to move it slightly to the left */
+    margin-left: -1%; /* Adjust margin to move it slightly to the left */
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(10px);
     border-radius: 10px;

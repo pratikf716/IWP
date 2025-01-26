@@ -9,7 +9,7 @@
 
 /* Footer Headings */
 .footer-heading {
-  color: blue;
+  color: #0b5079;
 }
 
 .footer-divider {
@@ -20,7 +20,7 @@
 
 .footer-description,
 .footer-item {
-  color: #04334f;
+  color: #0b5079;
 }
 
 .footer-links {
@@ -29,7 +29,7 @@
 }
 
 .footer-link {
-  color: #04334f;
+  color: #0b5079;
   text-decoration: none;
   margin-bottom: 8px;
 }
@@ -53,13 +53,13 @@
 
 .newsletter-button {
   background-color: rgb(135, 165, 245);
-  color: rgb(38, 4, 233);
+  color: #0b5079;
   border-radius: 10px;
   transition: background-color 0.3s ease-in-out;
 }
 
 .newsletter-button:hover {
-  background-color: #0056b3;
+  background-color: #0b5079;
 }
 
 /* Social Icons */
@@ -109,6 +109,6 @@
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 .newsletter-input::placeholder {
-  color: blue;
+  color: #0b5079;
   opacity: 1; /* Ensures the placeholder is fully visible */
 }

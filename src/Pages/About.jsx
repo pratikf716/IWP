@@ -14,7 +14,7 @@ const About = () => {
   return (
     <>
       {/* About Section */}
-      <div className="container-fluid " style={{marginTop:'20px'}}>
+      <div className="container-fluid " style={{marginTop:'50px'}}>
         <div className="container ">
           <div className="row gx-0 mb-3 mb-lg-0">
             <div className="col-lg-6 my-lg-5 py-lg-5">

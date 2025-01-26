@@ -1,72 +1,18 @@
 .testimonial-section {
   background-color: #0b5079;
-  padding: 0px 0; /* Decreased padding from 60px to 40px */
-  margin: 0px 0; /* Adjust margin if necessary */
-}
-
-
-.testimonial-section h1 {
-  color: #fff;
-  font-weight: 900;
-}
-
-.testimonial-carousel {
-  display: flex;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-}
-
-.testimonial-item {
-  padding: 20px; /* Reduced padding inside each testimonial item */
-  margin-bottom: 20px; /* Adjust spacing between testimonial items */
-}
-
-
-.testimonial-text {
-  font-size: 1.25rem;
-  font-weight: 400;
-  color: #e10b0b;
-}
-
-.quote-icon {
-  color: #1784e3;
-  margin: 0 5px;
-}
-
-.client-img, .client-img2 {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-size: cover;
-  background-position: center;
-}
-
-.client-img {
-  background-image: url("../Images/testimonial-1.jpg");
-}
-
-.client-img2 {
-  background-image: url("../Images/testimonial-2.jpg");
-}
-
-.ps-3 h3 {
-  margin: 0;
-  font-size: 1.2rem;
-}
-
-.ps-3 span {
-  font-size: 0.9rem;
-  color: #6c757d;
-  text-transform: uppercase;
-}
-.testimonial-section {
-  background-color: #0b5079;
   padding: 60px 0;
 }
 
 .testimonial-section h1 {
   color: #fff;
   font-weight: 700;
+}
+
+.testimonial-carousel {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  position: relative; /* Ensure positioning context for the arrows */
 }
 
 .testimonial-item {
@@ -115,29 +61,34 @@
   margin: 0 5px;
 }
 
+/* Increase the size of the arrows */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  width: 80px; /* Size of the arrow */
-  height: 80px; /* Size of the arrow */
+  width: 140px; /* Arrow size */
+  height: 140px; /* Arrow size */
   background-image: none; /* Remove default background */
   color: white; /* Set arrow color */
-  font-size: 2rem; /* Increase arrow size */
+  font-size: 14rem; /* Arrow font size */
 }
 
 .carousel-control-prev-icon::before {
   content: '\2039'; /* Left arrow */
   color: white; /* Arrow color */
-  font-size: 4.5rem; /* Arrow size */
+  font-size: 14rem; /* Increase arrow size */
 }
 
 .carousel-control-next-icon::before {
   content: '\203A'; /* Right arrow */
   color: white; /* Arrow color */
-  font-size: 4.5rem; /* Arrow size */
+  font-size: 14rem; /* Increase arrow size */
 }
 
 .carousel-control-prev,
 .carousel-control-next {
+  position: absolute; /* Position them within the container */
+  top: 20px; /* Adjusted to move arrows slightly higher */
+  transform: translateY(-50%); /* Fine-tune centering */
+  z-index: 1; /* Ensure arrows are above other elements */
   opacity: 0.8; /* Slight transparency */
 }
 
@@ -146,3 +97,11 @@
   opacity: 1; /* Full visibility on hover */
 }
 
+/* Center arrows horizontally */
+.carousel-control-prev {
+  left: 10px /* Position the left arrow near the center */
+}
+
+.carousel-control-next {
+  right: 10px; /* Position the right arrow near the center */
+}
