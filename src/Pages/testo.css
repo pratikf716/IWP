@@ -5,7 +5,8 @@
 
 .testimonial-section h1 {
   color: #fff;
-  font-weight: 700;
+  font-weight: 500;
+  font-family: lexend deca;
 }
 
 .testimonial-carousel {
@@ -64,38 +65,45 @@
 /* Increase the size of the arrows */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  width: 80px; /* Arrow size */
-  height: 140px; /* Arrow size */
-  background-image: none; /* Remove default background */
-  color: white; /* Set arrow color */
-  font-size: 14rem; /* Arrow font size */
+  width: 100px; /* Decrease the width */
+  height: 100px; /* Set height for proportion */
+  border: solid white; /* Add a border to make arrows thicker */
+  border-width: 0 4px 4px 0; /* Define thickness */
+  background: none; /* Remove background */
+  transform: rotate(45deg); /* Create arrow shape */
 }
 
-.carousel-control-prev-icon::before {
-  content: '\2039'; /* Left arrow */
-  color: white; /* Arrow color */
-  font-size: 14rem; /* Increase arrow size */
+.carousel-control-prev-icon {
+  transform: rotate(135deg); /* Adjust rotation for the left arrow */
 }
 
-.carousel-control-next-icon::before {
-  content: '\203A'; /* Right arrow */
-  color: white; /* Arrow color */
-  font-size: 14rem; /* Increase arrow size */
+.carousel-control-next-icon {
+  transform: rotate(-45deg); /* Adjust rotation for the right arrow */
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-  position: absolute; /* Position them within the container */
-  top: 20px; /* Adjusted to move arrows slightly higher */
-  transform: translateY(-50%); /* Fine-tune centering */
-  z-index: 1; /* Ensure arrows are above other elements */
+  position: absolute;
+  top: 50%; /* Vertically center the arrows */
+  transform: translateY(-50%); /* Centering adjustment */
+  z-index: 1; /* Ensure visibility */
   opacity: 0.8; /* Slight transparency */
+}
+
+.carousel-control-prev {
+  left: -20px; /* Adjust spacing from the left edge */
+}
+
+.carousel-control-next {
+  right: -20px; /* Adjust spacing from the right edge */
 }
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
-  opacity: 1; /* Full visibility on hover */
+  opacity: 1; /* Increase visibility on hover */
 }
+
+
 
 /* Center arrows horizontally */
 .carousel-control-prev {

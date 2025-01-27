@@ -52,9 +52,14 @@ const GetAQuote = () => {
                     />
                   </div>
                   <div className="col-12">
-                    <button className="btn  w-100 py-3 text-white" type="submit" style={{ backgroundColor: '#0b5079', borderColor: '#0b5079'}}>
-                      Enquire
-                    </button>
+                  <button
+                       className="w-100 py-3  btn"
+                         type="submit"
+                                          >
+                                        Enquire
+                                </button>
+
+
                   </div>
                 </div>
               </form>

@@ -9,7 +9,20 @@
     }
 }
 
-
+.btn {
+    background-color: #0b5079; /* Initial background color */
+    border-color: #0b5079; /* Initial border color */
+    color: white; /* Initial text color */
+    border-radius: 30px; /* Rounded corners */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+  }
+  
+  .btn:hover {
+    background-color: white; /* Background turns white on hover */
+    color: #0b5079; /* Text changes to blue */
+    border-color: #0b5079; /* Keeps border consistent */
+  }
+  
 .bg-quote {
     background: url(../Images/heroo.jpg);
     background-size: cover;
@@ -24,12 +37,16 @@
 
 .bg {
     margin-left: -1%; /* Adjust margin to move it slightly to the left */
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.1); /* Adjust the alpha value (0.1 is very transparent) */
+
     backdrop-filter: blur(10px);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 0px;
-    width: 70%; /* Adjust width as needed */
+    width: 60%; /* Adjust width as needed */
+}
+.bg:hover{
+    background: rgba(208, 208, 208, 0.7);
 }
 @media (max-width: 600px) {
     .bg {
@@ -43,4 +60,7 @@
       justify-content: center; /* Center the content horizontally */
     }
   }
+
+
+ 
   
