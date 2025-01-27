@@ -10,15 +10,15 @@
 .overlay-container {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  /* left: 50%;  */
+  left: 300px;
+  transform: translate(-50%, -50%); /* Adjust to center vertically */
   color: white;
   text-align: center;
   padding: 20px;
-  /* background-color: rgba(0, 0, 0, 0.5); */
   background-color: #0b5079;
   border-radius: 8px; /* Optional: Rounded corners */
-  max-width: 800px;
+  max-width: 500px;
   width: 90%; /* Ensure responsiveness */
 }
 
@@ -40,13 +40,40 @@
 @media (max-width: 768px) {
   .overlay-container {
     padding: 15px;
+    width: 90%; /* Keep width responsive */
   }
 
+  .project {
+    font-size: 28px; /* Reduce font size for smaller screens */
+  }
+
+  .para {
+    font-size: 16px;
+    max-width: 100%; /* Full width text on smaller screens */
+  }
+
+  /* Adjust headings and paragraphs for better readability on tablets */
   h1 {
     font-size: 24px;
   }
 
   p {
     font-size: 16px;
+  }
+}
+
+/* For extra small devices, like phones in portrait mode */
+@media (max-width: 480px) {
+  .overlay-container {
+    padding: 10px; /* Reduce padding */
+    width: 90%; /* Ensure it takes up most of the screen width */
+  }
+
+  .project {
+    font-size: 24px; /* Further reduce font size for readability */
+  }
+
+  .para {
+    font-size: 14px; /* Reduce font size for small screens */
   }
 }
