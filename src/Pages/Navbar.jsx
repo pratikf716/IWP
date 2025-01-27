@@ -28,7 +28,7 @@ const Navbar = () => {
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarCollapse">
-        <div className="navbar-nav ms-auto py-0 pe-4 border-end border-5 border-primary">
+        <div className="navbar-nav ms-auto py-0 pe-4 border-end border-5 border-primary" style={{gap:'20px'}}>
           <a href="index.html" className="nav-item nav-link active text-white">
             Home
           </a>

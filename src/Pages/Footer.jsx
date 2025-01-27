@@ -123,9 +123,7 @@ const Footer = () => {
                 <a href="#" className="footer-link">Home</a>
                 <a href="#" className="footer-link">About Us</a>
                 <a href="#" className="footer-link">Our Services</a>
-                <a href="#" className="footer-link">Meet The Team</a>
-                <a href="#" className="footer-link">Latest Blog</a>
-                <a href="#" className="footer-link">Contact Us</a>
+             
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
@@ -134,7 +132,7 @@ const Footer = () => {
               <form action="" className="newsletter-form">
                 <div className="input-group">
                   <input type="text" className="form-control newsletter-input" placeholder="Your Email"  />
-                  <button className="btn btn-info newsletter-button " >Sign Up</button>
+                  <button className="btn btn-info newsletter-button " style={{background:'#0b5079',color:'white'}} >Sign Up</button>
                 </div>
               </form>
               <h6 className="footer-subheading">Follow Us</h6>

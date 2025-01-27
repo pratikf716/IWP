@@ -23,12 +23,13 @@
 
 /* Navbar Links Styling */
 .nav-item {
-  font-size: 0.9rem;  /* Slightly smaller font for nav items */
+  font-size: 1.9rem;  /* Slightly smaller font for nav items */
   font-weight: 500;
 }
 
 .nav-item:hover {
-  color: #ffc107 !important;
+  scale:1.1 ;
+ text-decoration: underline;
 }
 
 /* Navbar Toggler for Mobile */

@@ -64,7 +64,7 @@
 /* Increase the size of the arrows */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  width: 140px; /* Arrow size */
+  width: 80px; /* Arrow size */
   height: 140px; /* Arrow size */
   background-image: none; /* Remove default background */
   color: white; /* Set arrow color */

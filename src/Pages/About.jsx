@@ -62,12 +62,12 @@ const About = () => {
             </div>
             <div className="col-lg-6 my-lg-5 py-lg-5">
               <div className="about-end p-5">
-                <h1 className="display-5 mb-4">
+                <h1 className="display-5 mb-4" style={{marginLeft:'10px'}}>
                   <span style={{ color: "#0b5079" }}>Our</span>
                   <span style={{ color: "skyblue" }}> Vision</span>
                 </h1>
 
-                <p>
+                <p style={{marginLeft:'10px'}}>
                   To establish The Indian Waterproofing Company as the industry
                   leader in providing cutting-edge waterproofing solutions while
                   maintaining an unwavering commitment to quality, innovation,

@@ -3,9 +3,9 @@
 .about-start,
 .about-end {
   padding: 100px;
-  /* background: rgba(255, 255, 255, 0.7); */
+   background: rgba(255, 255, 255, 0.7); 
     backdrop-filter: blur(10px);
-    border-radius: 10px;
+   
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1)
 }
 
@@ -97,14 +97,14 @@ textarea.form-control {
 @media (min-width: 992px) {
   .about-start {
     position: relative;
-    margin-right: -20px;
+    margin-right: -40px;
     z-index: 1;
     height: 350px;
   }
 
   .about-end {
     position: relative;
-    margin-left: -20px;
+    margin-left: -40px;
     z-index: 1;
     height: 350px;
   }
