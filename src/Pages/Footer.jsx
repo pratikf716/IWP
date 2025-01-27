@@ -153,7 +153,7 @@ const Footer = () => {
           <div className="row g-0">
             <div className="col-md-6 text-center text-md-start">
               <p className="mb-md-0">
-                Copyright &copy; <a className="text-white fw-bold" href="#">Your Site Name</a>. All Rights Reserved.
+                Copyright &copy; <a className="text-white fw-bold" href="#">Indian WaterProofing</a>. All Rights Reserved.
               </p>
             </div>
             <div className="col-md-6 text-center text-md-end">

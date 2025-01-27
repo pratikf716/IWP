@@ -133,6 +133,7 @@ html, body {
   gap: 20px;
   flex-wrap: wrap;
 }
+
 @media (max-width: 600px) {
   .bg-hero {
     padding-left: 20px;
@@ -160,12 +161,14 @@ html, body {
     margin-left: 0;
     margin-right: 100px;
   }
+  .buttonGroup{
+    margin-left: -70px;
+  }
 
   .btn-secondary, .btn-outline-secondary {
     padding: 12px 24px;
     font-size: 1rem;
     margin-top: 10px;
-   
     
   }
 
@@ -201,6 +204,7 @@ html, body {
     font-size: 1.125rem;
   }
 
+
   .bg-hero .btn-container {
     flex-direction: row;
   }
@@ -209,7 +213,7 @@ html, body {
 @media (min-width: 1025px) {
   .bg-hero {
     padding-left: 50px;
-    padding-right: 40px;
+    padding-right: 140px;
   }
 
   .bg-hero .col-lg-8 {
@@ -231,3 +235,10 @@ html, body {
     font-size: 1.25rem;
   }
 }
+
+@media only screen and (min-width: 1920px) and (max-height: 1080px) {
+  .buttonGroup{
+    margin-left: 20vh;
+  }
+}
+
