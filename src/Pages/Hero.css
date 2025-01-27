@@ -241,4 +241,76 @@ html, body {
     margin-left: 20vh;
   }
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .bg-hero {
+    padding-left: 20px; /* Reduce padding on the left */
+    padding-right: 20px; /* Optional: Adjust right padding if needed */
+    height: 75vh; /* Adjust height for better appearance */
+  }
+
+  .bg-hero .col-lg-8 {
+    padding: 20px; /* Adjust padding for the text container */
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .bg-hero .display-1 {
+    font-size: 3rem; /* Adjust font size for the title */
+    margin-left: 0; /* Ensure text is aligned within the container */
+  }
+
+  .bg-hero .display-2 {
+    font-size: 1.5rem; /* Adjust font size for the subtitle */
+    margin-left: 0; /* Align the subtitle */
+  }
+
+  .buttonGroup {
+    margin-left: 0; /* Center the buttons */
+    display: flex;
+    flex-wrap: wrap; /* Ensure buttons stay within bounds */
+    justify-content: flex-start; /* Align buttons properly */
+    gap: 10px; /* Add spacing between buttons */
+  }
+
+  .btn-secondary, .btn-outline-secondary {
+    padding: 12px 24px; /* Adjust button padding */
+    font-size: 1rem; /* Adjust font size */
+  }
+}
+@media (min-width: 1200px) and (max-width: 1366px) {
+  .bg-hero {
+    padding-left: 30px; /* Reduce padding on the left */
+    padding-right: 30px; /* Optional: Adjust right padding */
+    height: 75vh; /* Adjust height for better appearance */
+  }
+
+  .bg-hero .col-lg-8 {
+    padding: 20px; /* Reduce padding for text container */
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .bg-hero .display-1 {
+    font-size: 4rem; /* Adjust font size for the title */
+    margin-left: 0; /* Remove excessive left margin */
+  }
+
+  .bg-hero .display-2 {
+    font-size: 2rem; /* Adjust font size for the subtitle */
+    margin-left: 0; /* Remove excessive left margin */
+  }
+
+  .buttonGroup {
+    margin-left: -15px; /* Reset left margin */
+    display: flex;
+    flex-wrap: wrap; /* Ensure buttons stack if needed */
+    justify-content: flex-start; /* Align buttons properly */
+    gap: 15px; /* Add spacing between buttons */
+  }
+
+  .btn-secondary, .btn-outline-secondary {
+    padding: 14px 28px; /* Adjust button padding */
+    font-size: 1.125rem; /* Adjust font size */
+  }
+}
 

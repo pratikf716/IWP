@@ -134,7 +134,7 @@ const Footer = () => {
               <form action="" className="newsletter-form">
                 <div className="input-group">
                   <input type="text" className="form-control newsletter-input" placeholder="Your Email"  />
-                  <button className="btn btn-info newsletter-button">Sign Up</button>
+                  <button className="btn btn-info newsletter-button " >Sign Up</button>
                 </div>
               </form>
               <h6 className="footer-subheading">Follow Us</h6>

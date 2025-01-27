@@ -133,3 +133,73 @@ a.btn:hover {
   transform: translateY(-3px); /* Slight lift effect */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+/* For laptop screens up to 1366px width */
+@media (max-width: 1366px) {
+  .about-start,
+  .about-end {
+    padding: 50px;
+    font-size: 16px; /* Adjust the font size */
+  }
+
+  .about-start h1,
+  .about-end h1 {
+    font-size: 32px; /* Adjust heading size */
+    line-height: 40px;
+  }
+
+  .about-start p,
+  .about-end p {
+    font-size: 14px; /* Adjust paragraph size */
+  }
+
+  .position-absolute,
+  .position-absolutee {
+    height: 500px; /* Reduce image height */
+    width: 100%; /* Make it responsive */
+  }
+}
+
+/* For smaller screens, like tablets and smaller laptops */
+@media (max-width: 1024px) {
+  .about-start,
+  .about-end {
+    padding: 30px;
+  }
+
+  .about-start h1,
+  .about-end h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .about-start p,
+  .about-end p {
+    font-size: 12px;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .about-start,
+  .about-end {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .about-start h1,
+  .about-end h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .about-start p,
+  .about-end p {
+    font-size: 12px;
+  }
+
+  .position-absolute,
+  .position-absolutee {
+    height: 300px; /* Further reduce image size */
+    width: 100%;
+  }
+}
