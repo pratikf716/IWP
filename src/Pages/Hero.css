@@ -107,11 +107,12 @@ html, body {
 }
 
 .btn-secondary:hover, .btn-outline-secondary:hover {
-  background-color: transparent !important;
-  color: #0b5079 !important;
-  border: 2px solid #0b5079 !important;
+  background-color: white !important; /* Change to white */
+  color: #0b5079 !important;  /* Retain the original text color */
+  border: 2px solid #0b5079 !important;  /* Retain the border color */
   transform: translateY(-5px);
 }
+
 
 .btn-secondary:focus, .btn-outline-secondary:focus,
 .btn-secondary:active, .btn-outline-secondary:active {

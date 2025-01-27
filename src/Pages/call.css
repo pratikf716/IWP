@@ -1,84 +1,52 @@
 .bg-call-to-action {
-  background: url(../Images/heroimg.jpg);
-  background-size:contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 700px;
+  background: url(../Images/heroImage.jpg); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center center; /* Centers the image */
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Ensures the section takes full viewport height */
 }
 
-
-.custom-row {
-  margin-right: -110px;
-
-}
-
-.custom-col {
-  background: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+.overlay-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
   padding: 20px;
-  border-radius: 10px;
-  text-align: right;
-  width: auto;
-}
-
-.custom-heading {
-  color:#0b5079;
-  font-weight: 900;
-  font-size: 1.5rem;
-}
-
-.custom-paragraph {
-  color:#0b5079;
-  font-weight: 900;
-  font-size: 1rem;
-  line-height: 1.8;
-}
-
-.custom-button {
-  color: #080808;
+  /* background-color: rgba(0, 0, 0, 0.5); */
   background-color: #0b5079;
-  padding: 10px 20px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: background-color 0.3s;
+  border-radius: 8px; /* Optional: Rounded corners */
+  max-width: 800px;
+  width: 90%; /* Ensure responsiveness */
 }
 
-.custom-button:hover {
-  background-color: #555555;
+.project {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-.text{
-  color: blueviolet;
+
+.para {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 80%; /* Optional: Adjust to prevent text from being too wide */
+  margin: 0 auto;
 }
 
-@media (max-width: 600px) {
-  .bg-call-to-action {
-    height: auto; /* Adjust height for smaller screens */
-    padding: 20px; /* Add padding for better spacing */
+/* Optional: Make sure it looks good on smaller screens */
+@media (max-width: 768px) {
+  .overlay-container {
+    padding: 15px;
   }
 
-  .custom-row {
-    justify-content: center; /* Center the content horizontally */
-    margin-right: 0; /* Remove extra right margin */
+  h1 {
+    font-size: 24px;
   }
 
-  .custom-col {
-    margin: 0 auto; /* Center the column horizontally */
-    text-align: center; /* Center the text content */
-    padding: 15px; /* Adjust padding for smaller screens */
-    width: 100%; /* Take full width for better layout */
-  }
-
-  .custom-heading {
-    font-size: 1.25rem; /* Adjust font size for smaller screens */
-  }
-
-  .custom-paragraph {
-    font-size: 0.9rem; /* Adjust font size for smaller screens */
-    line-height: 1.5; /* Adjust line height */
-  }
-
-  .custom-button {
-    display: inline-block;
-    font-size: 0.9rem; /* Adjust font size for the button */
+  p {
+    font-size: 16px;
   }
 }
