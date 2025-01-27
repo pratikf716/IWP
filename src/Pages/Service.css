@@ -54,13 +54,7 @@
   transition: 0.5s;
 }
 
-.service-item:hover .service-icon div {
-  background: var(--secondary);
-}
 
-.service-item:hover .service-icon i {
-  color: var(--primary);
-}
 
 .service-item h3 {
   font-size: 16px;

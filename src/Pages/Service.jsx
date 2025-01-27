@@ -1,13 +1,16 @@
 import "./Service.css";
+import { FaPaintRoller, FaBrush, FaPaintBrush, FaPalette } from "react-icons/fa"; // Font Awesome icons
+import { LuPaintbrush } from "react-icons/lu"; // Lucide React icon
+import { TbBrush } from "react-icons/tb"; // Tabler icons
 
 const Service = () => {
   const services = [
-    { icon: "fa-paint-roller", title: "1. BOXTYPE WATERPROOFING TREATMENT", bgImage: "../Images/service1.png" },
-    { icon: "fa-paint-roller", title: "2. POLYUREA APPLICATION", bgImage: "../Images/service2.png" },
-    { icon: "fa-paint-roller", title: "3. MEMBRANE WATERPROOFING TREATMENT", bgImage: "../Images/service3.png" },
-    { icon: "fa-paint-roller", title: "4. POLYURETHANE COATING", bgImage: "../Images/service4.png" },
-    { icon: "fa-paint-roller", title: "5. EPOXY COATING", bgImage: "../Images/service5.png" },
-    { icon: "fa-paint-roller", title: "6. HIGH-DENSITY POLYETHYLENE", bgImage: "../Images/service6.png" },
+    { icon: <FaPaintRoller />, title: "1. BOXTYPE WATERPROOFING TREATMENT", bgImage: "../Images/service1.png" },
+    { icon: <FaBrush />, title: "2. POLYUREA APPLICATION", bgImage: "../Images/service2.png" },
+    { icon: <LuPaintbrush />, title: "3. MEMBRANE WATERPROOFING TREATMENT", bgImage: "../Images/service3.png" },
+    { icon: <FaPaintBrush />, title: "4. POLYURETHANE COATING", bgImage: "../Images/service4.png" },
+    { icon: <TbBrush />, title: "5. EPOXY COATING", bgImage: "../Images/service5.png" },
+    { icon: <FaPalette />, title: "6. HIGH-DENSITY POLYETHYLENE", bgImage: "../Images/service6.png" },
   ];
 
   return (
@@ -25,12 +28,9 @@ const Service = () => {
                 style={{ backgroundImage: `url(${service.bgImage})` }}
               >
                 <div className="service-icon p-3">
-                  <div>
-                    <i className={`fa fa-2x ${service.icon}`}></i>
-                  </div>
+                  <div  style={{ fontSize: "2rem", color: "white" }}>{service.icon}</div>
                 </div>
-                <h3 className="mt-2 title1" >{service.title}</h3>
-                
+                <h3 className="mt-2 title1">{service.title}</h3>
               </div>
             </div>
           ))}
