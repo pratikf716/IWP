@@ -1,0 +1,98 @@
+/* Gallery container */
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 50px; /* Spacing between items */
+    max-width: 1350px; /* Adjusted maximum width for larger displays */
+    margin: 20px auto; /* Center the gallery horizontally with vertical margin */
+    padding: 0px; /* Padding inside the gallery container */
+    /* Optional: White background and border radius removed as per the request */
+  }
+  
+  /* Individual project item */
+  .project-item {
+    text-align: center; /* Center-align text */
+    background: #0B5079; /* Dark background for better contrast */
+    border: 1px solid #e6e6e6; /* Softer border for a clean look */
+    border-radius: 10px; /* Rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    overflow: hidden; /* Clip content inside rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+  }
+  
+  /* Hover effect on project item */
+  .project-item:hover {
+    transform: scale(1.05); /* Slight enlargement on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  /* Image styling */
+  .project-image {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 1px solid #ddd; /* Line to separate the image from text */
+  }
+  
+  /* Project name under image */
+  .project-name {
+    font-size: 18px; /* Larger font size for better readability */
+    font-weight: bold; /* Bold text for emphasis */
+    color: #f0f0f0; /* Light text for contrast */
+    padding: 10px; /* Padding around the text */
+    text-transform: uppercase; /* Capitalize all letters for emphasis */
+    letter-spacing: 1px; /* Slightly increased spacing between letters */
+  }
+  
+  /* Title styling */
+  .project-title {
+    text-align: center; /* Center the title horizontally */
+    font-size: 32px; /* Large font for the title */
+    font-weight: bold; /* Bold text for visibility */
+    color: #333; /* Darker color for contrast */
+    margin: 20px 0; /* Add spacing above and below */
+    text-transform: uppercase; /* Capitalize all letters for a modern look */
+    letter-spacing: 1.2px; /* Extra spacing for a sleek design */
+  }
+  
+  /* View More Button styling */
+  .view-more-button {
+    align-items: center;
+    background-color: #0b5079; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Button font size */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+  }
+  
+  .view-more-button:hover {
+    background-color: #083c53; /* Darker color on hover */
+  }
+  
+  /* Additional content when "View More" is clicked */
+  .more-projects {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light gray background */
+    border-radius: 10px;
+  }
+  
+  .more-projects h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .more-projects p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    .project-gallery {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+    }
+  }
+  
