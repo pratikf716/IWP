@@ -38,7 +38,7 @@ const Project = () => {
     <div>
       <Navbar />
       {/* Title */}
-      <h1 className="project-title">Project</h1>
+      <h1 className="project-title"> Our Projects</h1>
 
       {/* Image Gallery */}
       <div className="project-gallery">

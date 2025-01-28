@@ -21,7 +21,7 @@ const Project = () => {
   return (
     <div>
       {/* Title */}
-      <h1 className="project-title">Project</h1>
+      <h1 className="project-title" style={{color:'#0b5079', fontFamily:'lexend deca', textTransform:'capitalize',fontSize:'3rem',fontWeight:'400',marginBottom:'10px'}}> Our Projects </h1>
 
       {/* Image Gallery */}
       <div className="project-gallery">

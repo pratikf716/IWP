@@ -9,6 +9,7 @@
     /* Optional: White background and border radius removed as per the request */
   }
   
+  
   /* Individual project item */
   .project-item {
     text-align: center; /* Center-align text */
@@ -39,7 +40,7 @@
     font-weight: bold; /* Bold text for emphasis */
     color: #f0f0f0; /* Light text for contrast */
     padding: 10px; /* Padding around the text */
-    text-transform: uppercase; /* Capitalize all letters for emphasis */
+    text-transform:capitalize; /* Capitalize all letters for emphasis */
     letter-spacing: 1px; /* Slightly increased spacing between letters */
   }
   
@@ -47,11 +48,12 @@
   .project-title {
     text-align: center; /* Center the title horizontally */
     font-size: 32px; /* Large font for the title */
-    font-weight: bold; /* Bold text for visibility */
+    /* Bold text for visibility */
     color: #333; /* Darker color for contrast */
     margin: 20px 0; /* Add spacing above and below */
-    text-transform: uppercase; /* Capitalize all letters for a modern look */
+    text-transform:capitalize; /* Capitalize all letters for a modern look */
     letter-spacing: 1.2px; /* Extra spacing for a sleek design */
+    font-family: lexend deca;
   }
   
   /* View More Button styling */
