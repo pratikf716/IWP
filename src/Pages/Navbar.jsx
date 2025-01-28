@@ -29,13 +29,13 @@ const Navbar = () => {
       </button>
       <div className="collapse navbar-collapse" id="navbarCollapse">
         <div className="navbar-nav ms-auto py-0 pe-4 border-end border-5 border-primary" style={{gap:'20px'}}>
-          <a href="index.html" className="nav-item nav-link active text-white">
+          <a href="#" className="nav-item nav-link active text-white">
             Home
           </a>
-          <a href="about.html" className="nav-item nav-link text-white">
+          <a href="#" className="nav-item nav-link text-white">
             About
           </a>
-          <a href="service.html" className="nav-item nav-link text-white">
+          <a href="#" className="nav-item nav-link text-white">
             Services
           </a>
           

@@ -1,7 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import Home from './Home'
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Import Router components
+
+import Navbar from "./Pages/Navbar";
+import Testo from "./Pages/Testo";
+import Hero from "./Pages/Hero";
+import About from "./Pages/About";
+import Call from "./Pages/Call";
+import Service from "./Pages/Service";
+import GetAQuote from "./Pages/GetAQuote";
+// import TeamCards from "./Pages/TeamCards";
+import Footer from "./Pages/Footer";
+import Project from "./Pages/Project";
+import ProjectDetails from "./Pages/ProjectDetails"; // Import ProjectDetails component
 import './App.css';
 // src/index.js or src/App.js
 import '@fontsource/lexend-deca'; // Defaults to weight 400
@@ -15,7 +25,30 @@ function App() {
 
   return (
     
-     <Home></Home>
+    <Router>
+    <Routes>
+      {/* Home Page Route */}
+      <Route
+        path="/"
+        element={
+          <>
+            <Navbar />
+            <Hero />
+            <About />
+            <Service />
+            <GetAQuote />
+            {/* <TeamCards /> */}
+            <Project />
+            <Testo />
+            <Call />
+            <Footer />
+          </>
+        }
+      />
+      {/* Project Details Route */}
+      <Route path="/project" element={<ProjectDetails />} />
+    </Routes>
+  </Router>
     
   )
 }
