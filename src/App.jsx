@@ -1,4 +1,3 @@
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Import Router components
 
 import Navbar from "./Pages/Navbar";
@@ -13,44 +12,61 @@ import Footer from "./Pages/Footer";
 import Project from "./Pages/Project";
 import ProjectDetails from "./Pages/ProjectDetails"; // Import ProjectDetails component
 import './App.css';
+
 // src/index.js or src/App.js
 import '@fontsource/lexend-deca'; // Defaults to weight 400
 import '@fontsource/lexend-deca/700.css'; // Optional for additional weights
-
-
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {
-  
-
   return (
-    
     <Router>
-    <Routes>
-      {/* Home Page Route */}
-      <Route
-        path="/"
-        element={
-          <>
-            <Navbar />
-            <Hero />
-            <About />
-            <Service />
-            <GetAQuote />
-            {/* <TeamCards /> */}
-            <Project />
-            <Testo />
-            <Call />
-            <Footer />
-          </>
-        }
-      />
-      {/* Project Details Route */}
-      <Route path="/project" element={<ProjectDetails />} />
-    </Routes>
-  </Router>
-    
-  )
+      <Routes>
+        {/* Home Page Route */}
+        <Route
+          path="/"
+          element={
+            <>
+              <Navbar />
+              <Hero />
+              <About />
+              <Service />
+              <GetAQuote />
+              {/* <TeamCards /> */}
+              <Project />
+              <Testo />
+              <Call />
+              <Footer />
+            </>
+          }
+        />
+        {/* About Page Route */}
+        <Route
+          path="/about"
+          element={
+            <>
+              <Navbar />
+              <About />
+              <Footer />
+            </>
+          }
+        />
+        {/* Services Page Route */}
+        <Route
+          path="/services"
+          element={
+            <>
+              <Navbar />
+              <Service />
+              <Footer />
+            </>
+          }
+        />
+        {/* Project Details Route */}
+        <Route path="/project" element={<ProjectDetails />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

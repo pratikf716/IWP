@@ -1,6 +1,6 @@
-
 import "./ProjectDetails.css";
 import Navbar from "./Navbar";
+import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 
 const Project = () => {
   // Images array with paths from the "Images" directory in the "public" folder
@@ -15,7 +15,7 @@ const Project = () => {
     { src: "./Images/image8.jpg", name: "TRUMP TOWER" },
     { src: "./Images/image9.jpg", name: "TRINITY" },
     { src: "./Images/image10.jpg", name: "SHAPOORJI SPRESIDENCY" },
-    { src: "./Images/image11.jpg", name: " ULTIMA BUSINESS CENTRE" },
+    { src: "./Images/image11.jpg", name: "ULTIMA BUSINESS CENTRE" },
     { src: "./Images/image12.jpg", name: "RIVERWALK 212" },
     { src: "./Images/image13.jpg", name: "VISTARA IVY" },
     { src: "./Images/image14.jpg", name: "YOO VILLA" },
@@ -30,20 +30,13 @@ const Project = () => {
     { src: "./Images/image23.jpg", name: "RAVINDRA TOWER" },
     { src: "./Images/image24.jpg", name: "RAVINDRA SKY WATERS" },
     { src: "./Images/image25.jpg", name: "SANKLA VISTA" },
-
-
-
-    
-
-
-
   ];
 
- 
+  const navigate = useNavigate(); // Hook for navigation
 
   return (
     <div>
-    <Navbar/>
+      <Navbar />
       {/* Title */}
       <h1 className="project-title">Project</h1>
 
@@ -62,6 +55,13 @@ const Project = () => {
         {/* <button onClick={handleViewMore} className="view-more-button">
           View More
         </button> */}
+      </div>
+
+      {/* Back to Home Button */}
+      <div className="back-to-home-container">
+        <button onClick={() => navigate("/")} className="back-to-home-button">
+          Back to Home
+        </button>
       </div>
     </div>
   );

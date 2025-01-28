@@ -95,4 +95,24 @@
       grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
     }
   }
-  
+  /* Back to Home button container */
+.back-to-home-container {
+  text-align: center; /* Center-align the button */
+  margin: 20px 0; /* Add spacing above and below */
+}
+
+/* Back to Home button styling */
+.back-to-home-button {
+  background-color: #d9534f; /* Red background color */
+  color: #fff; /* White text color */
+  padding: 10px 20px; /* Padding for the button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Button font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background color change */
+}
+
+.back-to-home-button:hover {
+  background-color: #c9302c; /* Darker red on hover */
+}
