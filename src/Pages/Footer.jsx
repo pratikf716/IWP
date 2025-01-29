@@ -23,7 +23,7 @@ const Footer = () => {
                    info@example.com
               </p>
               <p className="footer-item">
-              <i className="fa fa-phone-alt" style={{ color: '#0b5079' }} me-3></i>
+              <i className="fa fa-phone" style={{ color: '#0b5079' }} me-3></i>
               +012 345 67890
               </p>
             </div>
