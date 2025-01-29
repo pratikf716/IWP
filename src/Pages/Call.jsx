@@ -10,7 +10,7 @@ const Call = () => {
               <h1 className="project">Do you have any project?</h1>
               <p className="para" style={{color:'#0b5079'}}>Waterproofing your home office is exciting, but choosing the right products and servicemen while ensuring your safety can be a huge task. That’s where we come in. Our aim is to make home waterproofing a safe and great experience with IWC services. Reimagine your home office as a huge canvas—start your journey with IWC services and let us guide you through all the questions you might have.</p>
               <button
-                className="w-50 py-3 btn"
+                className="w-50 py-3 btn btn2"
                    type="submit"
                     style={{
                       display: "block",
