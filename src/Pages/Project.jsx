@@ -5,7 +5,7 @@ const Project = () => {
   // Images array with paths from the "Images" directory in the "public" folder
   const images = [
     { src: "/Images/image1.jpg", name: "YOO PUNE" },
-    { src: "/Images/image2.jpg", name: "PANCSHIL EASTSIDE" },
+    { src: "/Images/image2.jpg", name: "PANCHSHIL EASTSIDE" },
     { src: "/Images/image3.jpg", name: "CEREBRUM IT PARK B1" },
     { src: "/Images/image4.jpg", name: "PANCHSHIL TOWER" },
   ];

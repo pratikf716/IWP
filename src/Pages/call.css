@@ -13,7 +13,7 @@
 
 .overlay-container {
   position: relative; /* Ensure it stays inside the parent */
-  color:#0b5079;
+  color:white;
   text-align: left;
   padding: 20px;
   background: rgba(255, 255, 255, 0.1); /* Adjust the alpha value (0.1 is very transparent) */
@@ -23,7 +23,10 @@
   max-width: 400px; /* Reduce max-width for better fit on smaller screens */
   width: 40%; /* Set a responsive width */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  margin-left: 20px; /* Adjust margin for spacing */
+  margin-left: 1px; /* Adjust margin for spacing */
+}
+.overlay-container:hover{
+  background: rgba(208, 208, 208, 0.7);
 }
 
 /* Tablet View */
@@ -59,10 +62,14 @@
   }
 
   .project {
-    font-size: 20px; /* Adjust font size for smaller screens */
+    font-size: 11px; /* Adjust font size for smaller screens */
   }
 
   .para {
-    font-size: 7px; /* Adjust paragraph text size */
+    font-size: 6px; /* Adjust paragraph text size */
+  }
+  .btn{
+    font-size: 6px;
+   
   }
 }

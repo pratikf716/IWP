@@ -65,12 +65,17 @@
 /* Increase the size of the arrows */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  width: 100px; /* Decrease the width */
-  height: 100px; /* Set height for proportion */
+  width: 80px; /* Decrease the width */
+  height: 80px; /* Set height for proportion */
   border: solid white; /* Add a border to make arrows thicker */
   border-width: 0 4px 4px 0; /* Define thickness */
   background: none; /* Remove background */
   transform: rotate(45deg); /* Create arrow shape */
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon:hover{
+  width: 100px;
+ 
 }
 
 .carousel-control-prev-icon {

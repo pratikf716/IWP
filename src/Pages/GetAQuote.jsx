@@ -19,10 +19,10 @@ const GetAQuote = () => {
         <div className="row g-0 justify-content-start">
           <div className="col-lg-6 justify-content-start">
             <div className=" bg text-center p-5">
-              <h1 className="mb-4 text-white">Get a Quote</h1>
+              <h1 className="mb-4 text-white" style={{fontSize:'2rem'}}>Request a Quote</h1>
               <form onSubmit={handleSubmit}>
                 <div className="row g-3">
-                  <div className="col-12 col-sm-6">
+                  <div className="col-12 col-sm-12">
                     <input
                       type="text"
                       className="form-control bg-light border-0"
@@ -32,7 +32,7 @@ const GetAQuote = () => {
                       onChange={(e) => setName(e.target.value)}
                     />
                   </div>
-                  <div className="col-12 col-sm-6">
+                  <div className="col-12 col-sm-12">
                     <input
                       type="email"
                       className="form-control bg-light border-0"
@@ -56,7 +56,7 @@ const GetAQuote = () => {
                        className="w-100 py-3  btn"
                          type="submit"
                                           >
-                                        Enquire
+                                       Get a Quote
                                 </button>
 
 
