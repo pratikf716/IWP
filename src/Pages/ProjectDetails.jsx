@@ -1,8 +1,12 @@
 import "./ProjectDetails.css";
 import Navbar from "./Navbar";
 import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
-
+import { animateScroll as scroll } from "react-scroll";
 const Project = () => {
+
+  const scrollToTop = () => {
+    scroll.scrollToTop({ duration: 800, smooth: "easeInOutQuad" });
+  };
   // Images array with paths from the "Images" directory in the "public" folder
   const images = [
     { src: "./Images/image1.jpg", name: "YOO PUNE" },
@@ -64,9 +68,10 @@ const Project = () => {
 
       {/* Back to Home Button */}
       <div className="back-to-home-container">
-        <button onClick={() => navigate("/")} className="back-to-home-button">
-          Back to Home
-        </button>
+      <button onClick={scrollToTop} className="back-to-top-button">
+  ↑ 
+</button>
+
       </div>
     </div>
   );

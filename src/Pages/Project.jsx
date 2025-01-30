@@ -62,7 +62,7 @@ const Project = () => {
 
   // Redirect to the "project" page
   const handleViewMore = () => {
-    navigate("/project"); // Replace "/project" with your desired route
+    navigate("/projects"); // Replace "/project" with your desired route
   };
 
   return (
@@ -81,7 +81,7 @@ const Project = () => {
       >
         Our Projects
       </h1>
-      <hr className="w-25 mx-auto text-primary" style={{ opacity: 1, marginBottom: "40px"  }} />
+      <hr className=" mx-auto text-primary" style={{ opacity: 1, marginBottom: "40px " }} />
 
       {/* Image Gallery */}
       <div className="projects-gallery">

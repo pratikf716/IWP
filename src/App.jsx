@@ -13,6 +13,7 @@ import Project from "./Pages/Project";
 import ProjectDetails from "./Pages/ProjectDetails"; // Import ProjectDetails component
 import './App.css';
 
+
 // src/index.js or src/App.js
 import '@fontsource/lexend-deca'; // Defaults to weight 400
 import '@fontsource/lexend-deca/700.css'; // Optional for additional weights

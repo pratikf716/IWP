@@ -134,3 +134,30 @@
 
 /* ....arrow......... */
 
+/* Back to Top Button */
+.back-to-top-button {
+  position: fixed;  /* Fixed position so it stays in place */
+  bottom: 20px;  /* 20px from the bottom */
+  right: 20px;  /* 20px from the right */
+  background-color: #0b5079; /* Blue background */
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  width: 50px;  /* Fixed width */
+  height: 50px; /* Fixed height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds slight shadow */
+  z-index: 1000; /* Ensures it stays above other elements */
+}
+
+.back-to-top-button:hover {
+  background-color: #083c53;
+  transform: scale(1.1);
+}
+
