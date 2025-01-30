@@ -3,12 +3,13 @@ import "./testo.css";
 
 const Testo = () => {
   return (
-    <div className="container-fluid testimonial-section py-5">
-      <div className="container py-5">
-        <div className="row justify-content-center">
+    <div className="containerss-fluid testimonial-section py-5">
+      <div className="row justify-content-center">
           <div className="col-lg-8 text-center">
             <h1 className="display-5 mb-5" style={{fontFamily:'lexend deca'}}>Testimonials</h1>
           </div>
+      <div className="container py-5">
+        
         </div>
         <div className="row g-0">
           <div className="col-12">

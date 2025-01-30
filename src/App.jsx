@@ -63,7 +63,14 @@ function App() {
           }
         />
         {/* Project Details Route */}
-        <Route path="/project" element={<ProjectDetails />} />
+        <Route 
+        path="/projects" 
+        element={
+          <>
+        <ProjectDetails />
+        <Footer />
+        </>
+        } />
       </Routes>
     </Router>
   );

@@ -1,3 +1,12 @@
+/* Make Navbar Sticky */
+.navbar {
+  position: sticky; /* Makes the navbar sticky */
+  top: 0; /* Sticks it to the top of the page */
+  z-index: 9999; /* Ensures the navbar stays on top of other content */
+  background-color: #0b5079; /* Ensure it has a solid background */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow to distinguish the navbar */
+}
+
 /* Logo Styling */
 .logo {
   height: 60px;
@@ -28,12 +37,11 @@
 }
 
 .nav-item:hover {
-  scale:1.1 ;
- text-decoration: underline;
+  scale:1.1;
+  text-decoration: underline;
 }
 
 /* Navbar Toggler for Mobile */
-
 
 /* Responsive Styles */
 

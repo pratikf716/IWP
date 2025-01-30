@@ -39,13 +39,18 @@ const Project = () => {
       <Navbar />
       {/* Title */}
       <h1 className="project-title"> Our Projects</h1>
+      <hr className="w-25 mx-auto text-primary" style={{ opacity: 1, marginBottom: "40px"  }} />
 
       {/* Image Gallery */}
-      <div className="project-gallery">
+      <div className="projects-gallery">
         {images.map((image, index) => (
-          <div key={index} className="project-item">
-            <img src={image.src} alt={image.name} className="project-image" />
-            <p className="project-name">{image.name}</p>
+          <div key={index} className="projects-item">
+            <div className="project-image-container">
+              <img src={image.src} alt={image.name} className="projects-image" />
+            </div>
+            <div className="projects-name-container">
+              <p className="projects-name">{image.name}</p>
+            </div>
           </div>
         ))}
       </div>
