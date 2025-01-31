@@ -20,9 +20,9 @@ const Navbar = () => {
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span className="navbar-toggler-icon"></span>
+        <span className="navbar-toggler-icon " ></span>
       </button>
-      <div className="collapse navbar-collapse" id="navbarCollapse">
+      <div className="collapse navbar-collapse" id="navbarCollapse" >
         <div className="navbar-nav ms-auto py-0 pe-4 border-end border-5 border-primary" style={{ gap: "20px" }}>
           <Link to="/" className="nav-item nav-link active text-white">Home</Link>
           <Link to="/about" className="nav-item nav-link text-white">About</Link>

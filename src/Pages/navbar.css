@@ -14,7 +14,155 @@
   border-radius: 50%;
   background-color: white;
   transition: transform 0.3s ease;
+}/* Make Navbar Sticky */
+.navbar {
+  position: sticky; /* Makes the navbar sticky */
+  top: 0; /* Sticks it to the top of the page */
+  z-index: 9999; /* Ensures the navbar stays on top of other content */
+  background-color: #0b5079; /* Ensure it has a solid background */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow to distinguish the navbar */
 }
+
+/* Logo Styling */
+.logo {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: white;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1); /* Scale effect on hover */
+}
+
+/* Navbar Brand Text */
+.navbar-brand h1 {
+  font-size: 1.2rem;  /* Adjust font size for better visibility */
+  font-weight: bold;
+  opacity: 1;  /* Make sure it's always visible */
+  white-space: nowrap;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* Navbar Links Styling */
+.nav-item {
+  font-size: 1.9rem;  /* Slightly smaller font for nav items */
+  font-weight: 500;
+}
+
+.nav-item:hover {
+  scale:1.1;
+  text-decoration: underline;
+}
+
+/* Navbar Toggler for Mobile */
+
+/* Responsive Styles */
+
+/* Small Screens (Mobile) */
+@media (max-width: 576px) {
+  .logo {
+    height: 50px;
+    width: 50px;
+  }
+
+  .navbar-brand h1 {
+    font-size: 1rem; /* Smaller font size for mobile */
+    margin-left: 8px;
+    display: none; /* Hide the text on mobile screens */
+  }
+
+  .navbar-nav {
+    text-align: center; /* Center-align nav items */
+  }
+
+  .nav-item {
+    font-size: 0.85rem; /* Smaller font size for nav items */
+    margin-bottom: 10px; /* Add some space between items */
+  }
+
+  .navbar-collapse {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* Align logo and navbar items on one line */
+  .navbar-brand, .navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Medium Screens (Tablets) */
+@media (max-width: 768px) {
+  .logo {
+    height: 55px;
+    width: 55px;
+  }
+
+  .navbar-brand h1 {
+    font-size: 1.1rem; /* Slightly smaller text on tablet */
+  }
+
+  .navbar-nav {
+    text-align: center; /* Center-align nav items */
+  }
+
+  .nav-item {
+    font-size: 0.9rem; /* Standard size for nav items */
+  }
+
+  .navbar-collapse {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* Large Screens (Desktops and Tablets in Landscape Mode) */
+@media (min-width: 769px) {
+  .logo {
+    height: 60px;
+    width: 60px;
+  }
+
+  .navbar-brand h1 {
+    font-size: 1.2rem; /* Default font size for large screens */
+  }
+
+  .navbar-nav {
+    text-align: left; /* Left-align nav items */
+  }
+
+  .nav-item {
+    font-size: 1rem; /* Standard size for nav items */
+  }
+
+  .navbar-collapse {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-image: var(--bs-navbar-toggler-icon-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+ filter: invert(1);
+}
+
+
+
+ 
+
 
 .logo:hover {
   transform: scale(1.1); /* Scale effect on hover */

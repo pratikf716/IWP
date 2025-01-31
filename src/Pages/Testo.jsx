@@ -7,11 +7,21 @@ const Testo = () => {
     <div className="containerss-fluid testimonial-section py-5">
       <div className="row justify-content-center">
         <div className="col-lg-8 text-center">
-          <h1 className="display-5 mb-5" style={{ fontFamily: "lexend deca" }}>
+          <h1 className="display-5 " style={{ fontFamily: "lexend deca" }}>
             Testimonials
           </h1>
+          <hr
+  className="mx-auto text-primary"
+  style={{
+    opacity: 1,
+    marginTop: "0px",
+    borderColor: "white", // Set the line color to white
+    borderWidth: "1px", // Optional: Adjust thickness if needed
+   
+  }}
+/>
         </div>
-        <div className="container py-5"></div>
+        <div className="container "></div>
         <div className="row g-0">
           <div className="col-12">
             <div

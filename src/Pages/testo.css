@@ -1,4 +1,4 @@
-.containerss-fluid{
+.containerss-fluid {
   margin-top: 60px;
 }
 
@@ -11,13 +11,18 @@
   color: #fff;
   font-weight: 500;
   font-family: lexend deca;
+
+ 
 }
 
 .testimonial-carousel {
   display: flex;
+  justify-content: center; /* Center the carousel items horizontally */
+  align-items: center; /* Align items vertically */
+  position: relative;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
-  position: relative; /* Ensure positioning context for the arrows */
+ 
 }
 
 .testimonial-item {
@@ -95,25 +100,14 @@
 }
 
 .carousel-control-prev {
-  left: -20px; /* Adjust spacing from the left edge */
+  left: 10px; /* Position the left arrow near the center */
 }
 
 .carousel-control-next {
-  right: -20px; /* Adjust spacing from the right edge */
+  right: 10px; /* Position the right arrow near the center */
 }
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
   opacity: 1; /* Increase visibility on hover */
-}
-
-
-
-/* Center arrows horizontally */
-.carousel-control-prev {
-  left: 10px /* Position the left arrow near the center */
-}
-
-.carousel-control-next {
-  right: 10px; /* Position the right arrow near the center */
 }

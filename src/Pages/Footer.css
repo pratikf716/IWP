@@ -98,7 +98,7 @@
  
 }
 .footer-bottom p{
-  margin-left: -50px;
+  margin-left: -50px; 
 }
 
 .footer-bottom .footer-link:hover {
@@ -121,3 +121,4 @@
     margin-left: 0;
   }
 }
+

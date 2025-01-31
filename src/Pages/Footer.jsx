@@ -5,9 +5,9 @@ import './Footer.css';
 const Footer = () => {
   return (
     <>
-      <div className="container-fluid bg-footer text-light py-5 content">
+      <div className="container-fluid bg-footer text-light py-5 content " >
         <div className="container py-5">
-          <div className="row g-5">
+          <div className="row g-5 ">
             <div className="col-lg-3 col-md-6">
               <h4 className="footer-heading">Get In Touch</h4>
               <hr className="footer-divider" />
