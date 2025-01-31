@@ -90,11 +90,15 @@
 /* Footer Bottom Section */
 .footer-bottom {
   background: #0b5079;
-  
+ 
 }
 
 .footer-bottom .footer-link {
   color: orange;
+ 
+}
+.footer-bottom p{
+  margin-left: -50px;
 }
 
 .footer-bottom .footer-link:hover {
@@ -111,4 +115,9 @@
 .newsletter-input::placeholder {
   color: #0b5079;
   opacity: 1; /* Ensures the placeholder is fully visible */
+}
+@media (max-width: 768px) {
+  .footer-bottom p {
+    margin-left: 0;
+  }
 }

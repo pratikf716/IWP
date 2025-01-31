@@ -12,6 +12,7 @@ import Footer from "./Pages/Footer";
 import Project from "./Pages/Project";
 import ProjectDetails from "./Pages/ProjectDetails"; // Import ProjectDetails component
 import './App.css';
+import BackToTop from "./Pages/Backtotop";
 
 
 // src/index.js or src/App.js
@@ -21,14 +22,18 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {
   return (
+   
     <Router>
       <Routes>
+     
         {/* Home Page Route */}
         <Route
           path="/"
           element={
             <>
+           
               <Navbar />
+             
               <Hero />
               <About />
               <Service />
@@ -37,7 +42,9 @@ function App() {
               <Project />
               <Testo />
               <Call />
+              
               <Footer />
+            
             </>
           }
         />
@@ -60,6 +67,7 @@ function App() {
               <Navbar />
               <Service />
               <Footer />
+             
             </>
           }
         />
@@ -73,6 +81,7 @@ function App() {
         </>
         } />
       </Routes>
+    
     </Router>
   );
 }

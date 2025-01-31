@@ -6,7 +6,7 @@ const Navbar = () => {
   const [showName, setShowName] = useState(false);
 
   return (
-    <nav className="navbar navbar-expand-lg shadow-sm px-5 py-3" style={{ background: "#0b5079" }}>
+    <nav className="navbar navbar-expand-lg shadow-sm  px-5 py-3" style={{ background: "#0b5079" }}>
       <Link to="/" className="navbar-brand d-flex align-items-center">
         <img className="logo" src="/Images/IWCLOGO.png" alt="img" />
         <h1 className="m-0 text-uppercase text-white ms-3">Indian Waterproofing Company</h1>

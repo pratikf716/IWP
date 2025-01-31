@@ -79,7 +79,7 @@ const Footer = () => {
               </p>
             </div>
             <div className="col-md-6 text-center text-md-end">
-              <p className="mb-0">
+              <p className="mb-0" >
                 Designed by <a href="https://pawartechnologyservices.com/" target="_blank" className="footer-link">PTS</a>
               </p>
             </div>

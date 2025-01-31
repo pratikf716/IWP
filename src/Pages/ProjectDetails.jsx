@@ -2,11 +2,10 @@ import "./ProjectDetails.css";
 import Navbar from "./Navbar";
 import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 import { animateScroll as scroll } from "react-scroll";
+
 const Project = () => {
 
-  const scrollToTop = () => {
-    scroll.scrollToTop({ duration: 800, smooth: "easeInOutQuad" });
-  };
+  
   // Images array with paths from the "Images" directory in the "public" folder
   const images = [
     { src: "./Images/image1.jpg", name: "YOO PUNE" },
@@ -43,7 +42,7 @@ const Project = () => {
       <Navbar />
       {/* Title */}
       <h1 className="project-title"> Our Projects</h1>
-      <hr className="w-25 mx-auto text-primary" style={{ opacity: 1, marginBottom: "40px"  }} />
+      <hr className=" mx-auto text-primary" style={{ opacity: 1, marginBottom: "40px",width:'10%'  }} />
 
       {/* Image Gallery */}
       <div className="projects-gallery">
@@ -67,14 +66,11 @@ const Project = () => {
       </div>
 
       {/* Back to Home Button */}
-      <div className="back-to-home-container">
-      <button onClick={scrollToTop} className="back-to-top-button">
-  ↑ 
-</button>
-
-      </div>
+      
     </div>
+    
   );
+ 
 };
 
 export default Project;
