@@ -8,18 +8,19 @@ const Testo = () => {
       <div className="row justify-content-center">
         <div className="col-lg-8 text-center">
           <h1 className="display-5 " style={{ fontFamily: "lexend deca" }}>
-            Testimonials
-          </h1>
-          <hr
+            Testimonials <hr
   className="mx-auto text-primary"
   style={{
     opacity: 1,
-    marginTop: "0px",
+  
     borderColor: "white", // Set the line color to white
     borderWidth: "1px", // Optional: Adjust thickness if needed
    
+   
   }}
 />
+          </h1>
+         
         </div>
         <div className="container "></div>
         <div className="row g-0">
@@ -30,34 +31,7 @@ const Testo = () => {
               data-bs-ride="carousel"
             >
               {/* Dotted indicators */}
-              <div className="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#testimonialCarousel"
-                  data-bs-slide-to="0"
-                  className="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#testimonialCarousel"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#testimonialCarousel"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#testimonialCarousel"
-                  data-bs-slide-to="3"
-                  aria-label="Slide 4"
-                ></button>
-              </div>
+             
 
               {/* Carousel items */}
               <div className="carousel-inner">
@@ -116,7 +90,7 @@ const Testo = () => {
                 data-bs-target="#testimonialCarousel"
                 data-bs-slide="prev"
               >
-                <i className="fa-solid fa-arrow-left" style={{fontSize:'3rem'}}></i>
+                <i className="fa-solid fa-arrow-left" style={{fontSize:'3rem', border:' 1px solid white'}}></i>
                 <span className="visually-hidden">Previous</span>
               </button>
               <button
@@ -125,7 +99,7 @@ const Testo = () => {
                 data-bs-target="#testimonialCarousel"
                 data-bs-slide="next"
               >
-               <i className="fa-solid fa-arrow-right" style={{fontSize:'3rem'}}></i>
+               <i className="fa-solid fa-arrow-right" style={{fontSize:'3rem', border:' 1px solid white'}}></i>
                 <span className="visually-hidden">Next</span>
               </button>
             </div>

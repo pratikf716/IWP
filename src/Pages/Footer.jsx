@@ -28,16 +28,17 @@ const Footer = () => {
 </p>
 
             </div>
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-3 col-md-6 ">
               <h4 className="footer-heading">Our Services</h4>
               <hr className="footer-divider" />
-              <div className="footer-links">
-                <a href="#" className="footer-link">Regular Painting</a>
-                <a href="#" className="footer-link">Wall Painting</a>
-                <a href="#" className="footer-link">Floor Coating</a>
-                <a href="#" className="footer-link">Graffiti Removal</a>
-                <a href="#" className="footer-link">Mildew Removal</a>
-                <a href="#" className="footer-link">Window Washing</a>
+              <div className="footer-links" >
+              <a href="#" className="footer-link">Boxtype Waterproofing Treatment</a>
+<a href="#" className="footer-link">Polyurea Application</a>
+<a href="#" className="footer-link">Membrane Waterproofing Treatment</a>
+<a href="#" className="footer-link">Polyurethane Coating</a>
+<a href="#" className="footer-link">Epoxy Coating</a>
+<a href="#" className="footer-link">High-Density Polyethylene</a>
+
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
@@ -47,6 +48,8 @@ const Footer = () => {
                 <a href="#" className="footer-link">Home</a>
                 <a href="#" className="footer-link">About Us</a>
                 <a href="#" className="footer-link">Our Services</a>
+                <a href="#" className="footer-link">Our Projects</a>
+                <a href="#" className="footer-link">Request a Quote</a>
              
               </div>
             </div>

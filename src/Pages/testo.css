@@ -1,5 +1,6 @@
 .containerss-fluid {
   margin-top: 60px;
+  
 }
 
 .testimonial-section {
@@ -11,6 +12,7 @@
   color: #fff;
   font-weight: 500;
   font-family: lexend deca;
+ padding-bottom: 30px;
 
  
 }
@@ -22,7 +24,7 @@
   position: relative;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
- 
+  
 }
 
 .testimonial-item {
@@ -80,10 +82,12 @@
   border-width: 0 4px 4px 0; /* Define thickness */
   background: none; /* Remove background */
   transform: rotate(45deg); /* Create arrow shape */
+ 
 }
 
 .carousel-control-prev-icon {
   transform: rotate(135deg); /* Adjust rotation for the left arrow */
+
 }
 
 .carousel-control-next-icon {
@@ -100,14 +104,24 @@
 }
 
 .carousel-control-prev {
-  left: 10px; /* Position the left arrow near the center */
+  left: 200px; /* Position the left arrow near the center */
 }
 
 .carousel-control-next {
-  right: 10px; /* Position the right arrow near the center */
+  right: 200px; /* Position the right arrow near the center */
 }
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
   opacity: 1; /* Increase visibility on hover */
+}
+@media (max-width: 576px) {
+  .carousel-control-prev {
+    left: -10px; /* Position the left arrow near the center */
+  }
+  
+  .carousel-control-next {
+    right: -10px; /* Position the right arrow near the center */
+  }
+  
 }

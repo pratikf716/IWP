@@ -66,10 +66,13 @@
   font-size: 32px; /* Large font for the title */
   font-weight: bold; /* Bold text for visibility */
   color: #0b5079; /* Darker color for contrast */
+
   margin: 20px 0; /* Add spacing above and below */
   text-transform: uppercase; /* Capitalize all letters for a modern look */
   letter-spacing: 1.2px; /* Extra spacing for a sleek design */
+ 
 }
+
 
 /* View More Button styling */
 .view-more-button {

@@ -44,22 +44,27 @@ hr{
   text-align: center;
   /* background-color: rgba(0, 0, 0, 0.5);   */
   background-color: #0b5079;
+  opacity: 60%;
   padding: 20px;
   z-index: 1;
   transition: transform 0.3s ease;
 }
 
 .projects-item:hover .projects-name-container {
-  transform: translateY(-95%);  /* Move the text box slightly higher */
+  transform: translateY(-98%);  /* Move the text box slightly higher */
+  opacity: 100%;
 }
 
 .projects-name {
   color: white;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  white-space: nowrap;
   font-weight: bold;
   padding: 10px;
   text-align: center;
   align-items: center;
+ 
+  height: 20px;
 }
 
 .view-more-container {
