@@ -104,11 +104,11 @@
 }
 
 .carousel-control-prev {
-  left: 200px; /* Position the left arrow near the center */
+  left: 150px; /* Position the left arrow near the center */
 }
 
 .carousel-control-next {
-  right: 200px; /* Position the right arrow near the center */
+  right: 150px; /* Position the right arrow near the center */
 }
 
 .carousel-control-prev:hover,

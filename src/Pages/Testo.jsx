@@ -90,7 +90,7 @@ const Testo = () => {
                 data-bs-target="#testimonialCarousel"
                 data-bs-slide="prev"
               >
-                <i className="fa-solid fa-arrow-left" style={{fontSize:'3rem', border:' 1px solid white'}}></i>
+                <i className="fa-solid fa-arrow-left" style={{fontSize:'3rem', border:' 1px solid white',borderRadius:'50%',padding:'10px'}}></i>
                 <span className="visually-hidden">Previous</span>
               </button>
               <button
@@ -99,7 +99,7 @@ const Testo = () => {
                 data-bs-target="#testimonialCarousel"
                 data-bs-slide="next"
               >
-               <i className="fa-solid fa-arrow-right" style={{fontSize:'3rem', border:' 1px solid white'}}></i>
+               <i className="fa-solid fa-arrow-right" style={{fontSize:'3rem', border:' 1px solid white',borderRadius:'50%',padding:'10px'}}></i>
                 <span className="visually-hidden">Next</span>
               </button>
             </div>
